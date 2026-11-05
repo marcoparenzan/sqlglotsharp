@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>SqlGlotSharp.Extensions.Layer3</RootNamespace>
-    <!-- <upstream SQLGlot x.y.z>-net10-preview.<n> (AGENTS.md rule 8); preview.2 adds the package README -->
+    <!-- <upstream SQLGlot x.y.z>-net10-preview.<n> (AGENTS.md rule 8); preview.2 adds the package README; first GitHub release -->
     <Version>30.27.0-net10-preview.2</Version>
     <IsPackable>true</IsPackable>
     <PackageId>SqlGlotSharp.Extensions.Layer3</PackageId>

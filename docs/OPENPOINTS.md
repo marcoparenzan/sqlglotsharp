@@ -22,7 +22,7 @@ Known limits and decisions. The current verified state and how to resume are in 
 ## Decisions carried forward
 
 1. Target `net10.0` (exception to the global .NET 11 rule); no multi-targeting.
-2. Nothing is published on nuget.org. Packages go to `D:\Dev\NuGetLocalFeed` as `<upstream x.y.z>-net10-preview.<n>` (first: `30.27.0-net10-preview.1`, 2026-11-05). The ID `SqlGlotSharp` was not checked against nuget.org: check it before any public publication.
+2. Nothing is published on nuget.org. Packages go to `D:\Dev\NuGetLocalFeed` as `<upstream x.y.z>-net10-preview.<n>` (GitHub release `30.27.0-net10-preview.2`, 2026-11-05, packages attached). The IDs `SqlGlotSharp` and `SqlGlotSharp.Extensions.Layer3` were free on nuget.org on 2026-11-05.
 3. TimescaleDB and Layer 3 are host extensions (Layer 3 as a separate project, `SqlGlotSharp.Extensions.Layer3`) with no official oracle: expected values come from the Python plugins in `src/tools/oracle_plugins/`.
 4. Sync with the official project: every minor release or every two weeks, following `ALIGNMENT.md` section 8.
 5. Whether the full optimizer and an L4 level are needed later: not decided.

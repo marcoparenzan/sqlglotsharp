@@ -67,7 +67,7 @@ Latest result files are versioned in `docs/status/`.
 
 ## Open items
 
-Publication (in progress): clean-up done 2026-11-05 (logging aligned, Layer 3 as an extension, stray folders quarantined in `artifacts/trash/`, documentation moved to `docs/`, `.ralfai` deleted, `ops/` merged into `src/tools/`). Repository: https://github.com/marcoparenzan/sqlglotsharp. NuGet packages `SqlGlotSharp` `30.27.0-net10-preview.1` and `SqlGlotSharp.Extensions.Layer3` `30.27.0-net10-preview.2` (adds the package README) are in the local feed `D:\Dev\NuGetLocalFeed` (2026-11-05; not on nuget.org). Pushed to GitHub 2026-11-05 (public repository). Remaining: a note to the SQLGlot author.
+Publication (in progress): clean-up done 2026-11-05 (logging aligned, Layer 3 as an extension, stray folders quarantined in `artifacts/trash/`, documentation moved to `docs/`, `.ralfai` deleted, `ops/` merged into `src/tools/`). Repository: https://github.com/marcoparenzan/sqlglotsharp. Pushed to GitHub 2026-11-05 (public repository). First GitHub release `v30.27.0-net10-preview.2` (2026-11-05): packages `SqlGlotSharp` and `SqlGlotSharp.Extensions.Layer3` `30.27.0-net10-preview.2`, attached to the release and in the local feed `D:\Dev\NuGetLocalFeed`; not on nuget.org. Remaining: a note to the SQLGlot author.
 
 Nothing is open on the corpus. Known limits (details in `OPENPOINTS.md`):
 

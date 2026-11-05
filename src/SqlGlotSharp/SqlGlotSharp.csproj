@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- <upstream SQLGlot x.y.z>-net10-preview.<n>: new content = new n (AGENTS.md rule 8) -->
-    <Version>30.27.0-net10-preview.1</Version>
+    <Version>30.27.0-net10-preview.2</Version>
     <IsPackable>true</IsPackable>
     <PackageId>SqlGlotSharp</PackageId>
     <Authors>Marco Parenzan</Authors>

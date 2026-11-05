@@ -152,3 +152,4 @@
 - First Git commit (local). Not pushed.
 - Layer 3 package README (`src/SqlGlotSharp.Extensions.Layer3/README.md`), packed as `SqlGlotSharp.Extensions.Layer3` `30.27.0-net10-preview.2` (preview.1 stays in the feed, without README). README example checked from the package: `JSON_ARRAY_CONTAINS('a', t.tags) AND b = 1`.
 - Pushed `main` to https://github.com/marcoparenzan/sqlglotsharp (public), authorized by Marco.
+- Library bumped to `30.27.0-net10-preview.2` (no code change) so both packages share the version; tag and GitHub release `v30.27.0-net10-preview.2` with both `.nupkg` attached. Not published on nuget.org.

@@ -17,7 +17,7 @@ dotnet test src/SqlGlotSharp.Tests
 Nothing is published on nuget.org. Either pack it into a local feed or reference the project. `dotnet pack -c Release` on `src/SqlGlotSharp` and `src/SqlGlotSharp.Extensions.Layer3` writes `SqlGlotSharp.<version>.nupkg` and `SqlGlotSharp.Extensions.Layer3.<version>.nupkg` to `D:\Dev\NuGetLocalFeed` (`PackageOutputPath` in the `.csproj`; pass `-o <folder>` for another feed). Then:
 
 ```powershell
-dotnet add MyApp package SqlGlotSharp --version 30.27.0-net10-preview.1
+dotnet add MyApp package SqlGlotSharp --version 30.27.0-net10-preview.2
 dotnet add MyApp package SqlGlotSharp.Extensions.Layer3 --version 30.27.0-net10-preview.2   # optional
 ```
 
