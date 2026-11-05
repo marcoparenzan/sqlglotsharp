@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "dialects/dialect.data.g.cs",
+      "sha256": "54e324a225b8541c8bf73498dd9d41f717ce01491c569799ed3fa0357c43c001"
+    },
+    {
+      "path": "dialects/dialect.enums.g.cs",
+      "sha256": "6bbde8c986c33255ff2672cf97f57cbfa3dee2496f465c158591f138b80145ab"
+    },
+    {
+      "path": "dialects/dialect.registry.g.cs",
+      "sha256": "80928017d86e33f7c5c0667c9ec4b16c4cb5a959d41655be7637de386b225b65"
+    },
+    {
+      "path": "dialects/fabric.data.g.cs",
+      "sha256": "4d4e956b53c6c7cbc1f1eb26a895c212320530a27627444fe910914c0245c0cd"
+    },
+    {
+      "path": "dialects/postgres.data.g.cs",
+      "sha256": "5dee9854eeb34c1d5bb5e9f86b5f661e965ba38621bff65d3bcf0c6c2fe7dd64"
+    },
+    {
+      "path": "dialects/tsql.data.g.cs",
+      "sha256": "cf331ef31fcb664e7e66aa3ca38235f67e53b9ebaabf6aa49ccb1acf2fde769c"
+    },
+    {
+      "path": "errors.enums.g.cs",
+      "sha256": "43cbd07ed7c16867b721688bf0a9a3345321bb70d07815ea55ed59ac8d324cfe"
+    },
+    {
+      "path": "expressions/__init__.enumaliases.g.cs",
+      "sha256": "8cd5e1d4172249af4d041f162df7366d8bc0b6b3cefb5aabea72cabb03b4700f"
+    },
+    {
+      "path": "expressions/__init__.registry.g.cs",
+      "sha256": "d2e571ac6c49669af6e0f132ed0351f182f0822a03f11e774ca62e0006cdc0bb"
+    },
+    {
+      "path": "expressions/aggregate.constructors.g.cs",
+      "sha256": "5f06e8959f07478669464d6a4fbcb37392746d823b5d84aa615407a4cb51378f"
+    },
+    {
+      "path": "expressions/aggregate.meta.g.cs",
+      "sha256": "62134efcb73e996e2bf995b4f409993c704975893bc12315e7abcc0083d9484f"
+    },
+    {
+      "path": "expressions/aggregate.shells.g.cs",
+      "sha256": "d364867c4800c99d6914be3101efa50d79a0ede051448cfc29b1637c33372287"
+    },
+    {
+      "path": "expressions/array.constructors.g.cs",
+      "sha256": "e261ded880df5740ec1145cffaa870b4293b9e59c4053d6896690c3053015597"
+    },
+    {
+      "path": "expressions/array.meta.g.cs",
+      "sha256": "100a650639403f13c7702ed0001dd2899472e6f0cfcb8202753e09bc28dab2e8"
+    },
+    {
+      "path": "expressions/array.shells.g.cs",
+      "sha256": "5bdb2e0124d25ab009c511324722f3110ddf61a64b92eb969774e682b055485c"
+    },
+    {
+      "path": "expressions/constraints.constructors.g.cs",
+      "sha256": "6a0523751039d44b5b6590b267b53a533b82a2c9d4dde5ca935f514d9ac70633"
+    },
+    {
+      "path": "expressions/constraints.meta.g.cs",
+      "sha256": "610a4ad4177ed654ef59bb47875891321758dc7444d63b601b0f6d8aea641968"
+    },
+    {
+      "path": "expressions/constraints.shells.g.cs",
+      "sha256": "d171d79d05d1adf3c55c08f261a6a348bc7a619a307a90167ecd13412a0a6c2c"
+    },
+    {
+      "path": "expressions/core.constructors.g.cs",
+      "sha256": "716a1fa5bd9d38664b19736d808a862c7bfa6aff4c018d6293162af0c2f14f01"
+    },
+    {
+      "path": "expressions/core.meta.g.cs",
+      "sha256": "ea3383de09201ded117704f4e870ad170fb955c2d091ed63ad33cfe30cca9255"
+    },
+    {
+      "path": "expressions/core.shells.g.cs",
+      "sha256": "b87f90bd4b7bf1f2ce8bb13010d1622b64cbedf2db11be325618bda45ca4c4fa"
+    },
+    {
+      "path": "expressions/core.timeunit.data.g.cs",
+      "sha256": "28b72067527fc5df2874f4a20b121d6434168d3f64dc59604214f1942cab6707"
+    },
+    {
+      "path": "expressions/datatypes.constructors.g.cs",
+      "sha256": "95edab36e1c41560d82aba3ad1ef2666f0f1148945cd6ae37eb876326cbb06d9"
+    },
+    {
+      "path": "expressions/datatypes.data.g.cs",
+      "sha256": "11a2ef3b464c956127df1887809ab419a7428bbf038e2f0882cd6dec2e8340ee"
+    },
+    {
+      "path": "expressions/datatypes.enums.g.cs",
+      "sha256": "5810642713e34e7900c298ad2efbc0a3314bb42b3742050503049a1ee4a068f8"
+    },
+    {
+      "path": "expressions/datatypes.meta.g.cs",
+      "sha256": "9a3f6093139c47c5a6f24537e1ba565859b817d533cc27c33753ffb4dd414d71"
+    },
+    {
+      "path": "expressions/datatypes.shells.g.cs",
+      "sha256": "57e8640f1db4c9db0ded3f92ef21976df25ca340370b0233db57d0fddc0f8525"
+    },
+    {
+      "path": "expressions/ddl.constructors.g.cs",
+      "sha256": "1cb9afbb0ceeac00889793f00390bf1d6220acc081130d77bc6a35b399998f7c"
+    },
+    {
+      "path": "expressions/ddl.meta.g.cs",
+      "sha256": "28e45579c85300080ad73c1be5c451e8cca482f632fd1161f4fa7eeaf4063294"
+    },
+    {
+      "path": "expressions/ddl.shells.g.cs",
+      "sha256": "b8cf2716bb8432727ad0647df19758cafaa9e548caecba42785033a1df03b180"
+    },
+    {
+      "path": "expressions/dml.constructors.g.cs",
+      "sha256": "d23285f3de845b890b61f06ed7bf33960313651e501deda5a5f8594ee8106594"
+    },
+    {
+      "path": "expressions/dml.meta.g.cs",
+      "sha256": "78efaee9157c56197179d5887fca4600d7c7f2dc250ac47b169307e1be53ae23"
+    },
+    {
+      "path": "expressions/dml.shells.g.cs",
+      "sha256": "cca93ef0bfeb547661a787d291092dd158f9d7491e583b6a9cdad1105becd531"
+    },
+    {
+      "path": "expressions/functions.constructors.g.cs",
+      "sha256": "be2d75aa4b752d24077b56be4d4a02709ba7e705a495b3cdbb149c565db8f3e8"
+    },
+    {
+      "path": "expressions/functions.meta.g.cs",
+      "sha256": "6e68fcf687525f4d6545b8ee79f3fb0d72414e70e7fe915187595e3ba6cd54f1"
+    },
+    {
+      "path": "expressions/functions.shells.g.cs",
+      "sha256": "363fdc51428b12f5bae03c610aaafc91b484671772414024021eb8f7c232287c"
+    },
+    {
+      "path": "expressions/json.constructors.g.cs",
+      "sha256": "eb554c621e2f430cd6311241153ea0cde2ff9f400dbe1957c6f5e961324d6705"
+    },
+    {
+      "path": "expressions/json.meta.g.cs",
+      "sha256": "9e54cf027aaaab47edfb3f8093a013402a24c4f8b41e331893cbda3d4fdd3a6c"
+    },
+    {
+      "path": "expressions/json.shells.g.cs",
+      "sha256": "14b55bd87cc8efa9085a18aa44d2912c780591af834e3deeee423b76cd4185b0"
+    },
+    {
+      "path": "expressions/math.constructors.g.cs",
+      "sha256": "c2335d08d3428574dae32bcc6d647e13825f10916359960a9b14880b237dcf49"
+    },
+    {
+      "path": "expressions/math.meta.g.cs",
+      "sha256": "3a0a74d64d6b91ee3131aff293a79e4a17bc185ab04c0979345b7a2c44fab63f"
+    },
+    {
+      "path": "expressions/math.shells.g.cs",
+      "sha256": "673f1e25c7d9fb821e1c05500f58d9afd70c6f003403df5c2d6307d3139fb3b0"
+    },
+    {
+      "path": "expressions/properties.constructors.g.cs",
+      "sha256": "f05c31a53eb5864ff15e0b5862ad0f054fd31642d1ff8e1642a4c4fbb02605e2"
+    },
+    {
+      "path": "expressions/properties.data.g.cs",
+      "sha256": "29663cc731ca46811a4ab8f20193819afd69d8bba7f24124b2896f248fd96d77"
+    },
+    {
+      "path": "expressions/properties.enums.g.cs",
+      "sha256": "2bd324e415dc1cb829c0bd7ad56eb7b5928e8d0749cd0ac1164686f1f43848d2"
+    },
+    {
+      "path": "expressions/properties.meta.g.cs",
+      "sha256": "22d4f70a4e55e3ca3e88ecf145a1ba3bcc8ff327b2cd8b62aa1b87c3643817cd"
+    },
+    {
+      "path": "expressions/properties.shells.g.cs",
+      "sha256": "782f9a80b053a50a56e05812e0979c89a48e63bcae8bec2a7866004f9071ecb8"
+    },
+    {
+      "path": "expressions/query.constructors.g.cs",
+      "sha256": "2ececddfc248fdeac8b1a77626f82998b1624e3ca0d4b5df68d18a6719b653fe"
+    },
+    {
+      "path": "expressions/query.meta.g.cs",
+      "sha256": "863fbd5d176e6366ee9717f8f752ce5025bd82901dbad382a279299d932c4b7b"
+    },
+    {
+      "path": "expressions/query.shells.g.cs",
+      "sha256": "a8faf0ef08e65ada2d1ef5fbce16db75fd288be44e9d54c3ecacac5f37eb17aa"
+    },
+    {
+      "path": "expressions/string.constructors.g.cs",
+      "sha256": "a0cfa7caf7e55c2e863d8ef26adf5af8f8f4e989529150560656adabd8bf61d8"
+    },
+    {
+      "path": "expressions/string.meta.g.cs",
+      "sha256": "c1608f56a9244a8c28053d18e689418d1ff40cbfdc2cc5cd2530360e5f1dfe18"
+    },
+    {
+      "path": "expressions/string.shells.g.cs",
+      "sha256": "2a9be7e9c398189c224192f0dc32fd0102c20e093cf240a42dac2f39270dd9b5"
+    },
+    {
+      "path": "expressions/temporal.constructors.g.cs",
+      "sha256": "1484b6ae7ee2df27ab3f434e4f10f99f6f1135aebd0c634466ed6cde15cd142e"
+    },
+    {
+      "path": "expressions/temporal.data.g.cs",
+      "sha256": "35543573e49b3efc708cd887d395c9f3e1f2744396749b88594167d5afc2caab"
+    },
+    {
+      "path": "expressions/temporal.meta.g.cs",
+      "sha256": "a0e1fdfb37ed3d15111eb80934fc85c8d709b54ca07e41ef52d72348a021e1d1"
+    },
+    {
+      "path": "expressions/temporal.shells.g.cs",
+      "sha256": "ea78d8fc1c82d6111860e9703cf14d4c9a5a0e8f3745995bae0e00876ee3cc52"
+    },
+    {
+      "path": "generator.data.g.cs",
+      "sha256": "34f155752fd06fbeddaccac489ccffafdaaf4e3ec4c431a15c322397d5e692bf"
+    },
+    {
+      "path": "generators/fabric.data.g.cs",
+      "sha256": "89cd1d10199afc39529c48316f70920f7ef07422877befe99c2004c55fde023a"
+    },
+    {
+      "path": "generators/postgres.data.g.cs",
+      "sha256": "6cdf8c7f1018d8ab43c66aef7008b6df2a25063e77bfe2f9da48449319a1c4f9"
+    },
+    {
+      "path": "generators/tsql.data.g.cs",
+      "sha256": "3451eaccb350c0e19092d92713bdf1606d13085c86509fa2c2a2e6afc0ff8750"
+    },
+    {
+      "path": "jsonpath.data.g.cs",
+      "sha256": "4d6acee1b6b41e042fe089df74efc44420f8506a1a1807117939b0d3804e85a6"
+    },
+    {
+      "path": "optimizer/scope.enums.g.cs",
+      "sha256": "9e82fdfac8bc6196af22fc49f96be7b974924890446a25a58035d6eff32317d8"
+    },
+    {
+      "path": "parser.data.g.cs",
+      "sha256": "d7f5881bc456f0f122caccb0be521266d760788a032dbf4e18e9744491b310c7"
+    },
+    {
+      "path": "parser.enums.g.cs",
+      "sha256": "11cd0cb50b78cc49a6aa1cf19ffb93866ec1e4e68e2c672c47808c418c8bf549"
+    },
+    {
+      "path": "parsers/fabric.data.g.cs",
+      "sha256": "17b87575d2bbf3cf37c7392d5d8087395f14cdcf1dd82e669b60b574c00ce309"
+    },
+    {
+      "path": "parsers/postgres.data.g.cs",
+      "sha256": "326cd5507118136ea29c9487e3388384265b1bd1a3a93addf3e0c503bb5f6a09"
+    },
+    {
+      "path": "parsers/tsql.data.g.cs",
+      "sha256": "b773c1b444d1a3da0c5caceae0e2b8bfd5d04d97a733b5342d5328e8745bae2c"
+    },
+    {
+      "path": "tokenizer_core.enums.g.cs",
+      "sha256": "8ca92c6dcafb75a1faedc9941c6573f8f2f9cc250c78afde61e64a86b97e4b2a"
+    },
+    {
+      "path": "tokens.data.g.cs",
+      "sha256": "1a8e854adde7a4d5c8d417ef850ea9d469b66157e8c187f4fc9f14957baed986"
+    },
+    {
+      "path": "trie.enums.g.cs",
+      "sha256": "f4876a21a067e8ef5fbf439c2582b57c6d4d201ded5838a1bb5ab15b581bc4b3"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "class_count": 18,
+  "property_count": 1794,
+  "unsupported_data": [],
+  "handwritten_attribute_count": 101,
+  "coverage": "18 scoped dialect/parser/generator/tokenizer classes, including JSONPath"
+}

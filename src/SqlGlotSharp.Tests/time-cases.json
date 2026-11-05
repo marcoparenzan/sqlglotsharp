@@ -1,0 +1,259 @@
+{
+  "formats": [
+    {
+      "input": "",
+      "mapping": {
+        "%Y": "YYYY",
+        "%m": "MM",
+        "%d": "DD"
+      },
+      "expected": null
+    },
+    {
+      "input": "%Y-%m-%d",
+      "mapping": {
+        "%Y": "YYYY",
+        "%m": "MM",
+        "%d": "DD"
+      },
+      "expected": "YYYY-MM-DD"
+    },
+    {
+      "input": "YYYY-MM-DD",
+      "mapping": {
+        "%Y": "YYYY",
+        "%m": "MM",
+        "%d": "DD"
+      },
+      "expected": "YYYY-MM-DD"
+    },
+    {
+      "input": "YYY",
+      "mapping": {
+        "%Y": "YYYY",
+        "%m": "MM",
+        "%d": "DD"
+      },
+      "expected": "YYY"
+    },
+    {
+      "input": "ababc",
+      "mapping": {
+        "%Y": "YYYY",
+        "%m": "MM",
+        "%d": "DD"
+      },
+      "expected": "ababc"
+    },
+    {
+      "input": "a",
+      "mapping": {
+        "%Y": "YYYY",
+        "%m": "MM",
+        "%d": "DD"
+      },
+      "expected": "a"
+    },
+    {
+      "input": "abcXab",
+      "mapping": {
+        "%Y": "YYYY",
+        "%m": "MM",
+        "%d": "DD"
+      },
+      "expected": "abcXab"
+    },
+    {
+      "input": "\ud83d\ude00%Y",
+      "mapping": {
+        "%Y": "YYYY",
+        "%m": "MM",
+        "%d": "DD"
+      },
+      "expected": "\ud83d\ude00YYYY"
+    },
+    {
+      "input": "",
+      "mapping": {
+        "Y": "y",
+        "YY": "yy",
+        "YYYY": "year"
+      },
+      "expected": null
+    },
+    {
+      "input": "%Y-%m-%d",
+      "mapping": {
+        "Y": "y",
+        "YY": "yy",
+        "YYYY": "year"
+      },
+      "expected": "%y-%m-%d"
+    },
+    {
+      "input": "YYYY-MM-DD",
+      "mapping": {
+        "Y": "y",
+        "YY": "yy",
+        "YYYY": "year"
+      },
+      "expected": "year-MM-DD"
+    },
+    {
+      "input": "YYY",
+      "mapping": {
+        "Y": "y",
+        "YY": "yy",
+        "YYYY": "year"
+      },
+      "expected": "YYY"
+    },
+    {
+      "input": "ababc",
+      "mapping": {
+        "Y": "y",
+        "YY": "yy",
+        "YYYY": "year"
+      },
+      "expected": "ababc"
+    },
+    {
+      "input": "a",
+      "mapping": {
+        "Y": "y",
+        "YY": "yy",
+        "YYYY": "year"
+      },
+      "expected": "a"
+    },
+    {
+      "input": "abcXab",
+      "mapping": {
+        "Y": "y",
+        "YY": "yy",
+        "YYYY": "year"
+      },
+      "expected": "abcXab"
+    },
+    {
+      "input": "\ud83d\ude00%Y",
+      "mapping": {
+        "Y": "y",
+        "YY": "yy",
+        "YYYY": "year"
+      },
+      "expected": "\ud83d\ude00%y"
+    },
+    {
+      "input": "",
+      "mapping": {
+        "ab": "X",
+        "abc": "Y",
+        "b": "Z"
+      },
+      "expected": null
+    },
+    {
+      "input": "%Y-%m-%d",
+      "mapping": {
+        "ab": "X",
+        "abc": "Y",
+        "b": "Z"
+      },
+      "expected": "%Y-%m-%d"
+    },
+    {
+      "input": "YYYY-MM-DD",
+      "mapping": {
+        "ab": "X",
+        "abc": "Y",
+        "b": "Z"
+      },
+      "expected": "YYYY-MM-DD"
+    },
+    {
+      "input": "YYY",
+      "mapping": {
+        "ab": "X",
+        "abc": "Y",
+        "b": "Z"
+      },
+      "expected": "YYY"
+    },
+    {
+      "input": "ababc",
+      "mapping": {
+        "ab": "X",
+        "abc": "Y",
+        "b": "Z"
+      },
+      "expected": "XY"
+    },
+    {
+      "input": "a",
+      "mapping": {
+        "ab": "X",
+        "abc": "Y",
+        "b": "Z"
+      },
+      "expected": "a"
+    },
+    {
+      "input": "abcXab",
+      "mapping": {
+        "ab": "X",
+        "abc": "Y",
+        "b": "Z"
+      },
+      "expected": "YXX"
+    },
+    {
+      "input": "\ud83d\ude00%Y",
+      "mapping": {
+        "ab": "X",
+        "abc": "Y",
+        "b": "Z"
+      },
+      "expected": "\ud83d\ude00%Y"
+    }
+  ],
+  "precisions": [
+    {
+      "input": "2023-01-01 12:13:14",
+      "expected": 0
+    },
+    {
+      "input": "2023-01-01 12:13:14.123456+00:00",
+      "expected": 6
+    },
+    {
+      "input": "2023-01-01 12:13:14.120000",
+      "expected": 3
+    },
+    {
+      "input": "2023-01-01T12.000001",
+      "expected": 6
+    },
+    {
+      "input": "2023-01-01T12.0000001",
+      "expected": 0
+    },
+    {
+      "input": "2023-01-01T12:00:00+01:00:00.123456",
+      "expected": 0
+    },
+    {
+      "input": "invalid",
+      "expected": 0
+    },
+    {
+      "input": "2023-02-29T12:00:00",
+      "expected": 0
+    },
+    {
+      "input": "20240101T123456.12Z",
+      "expected": 3
+    }
+  ],
+  "timezone_count": 596
+}

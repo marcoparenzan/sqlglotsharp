@@ -1,0 +1,589 @@
+{
+  "ratios": [
+    {
+      "first": "tide",
+      "second": "diet",
+      "expected": 0.25
+    },
+    {
+      "first": "diet",
+      "second": "tide",
+      "expected": 0.5
+    },
+    {
+      "first": "",
+      "second": "",
+      "expected": 1.0
+    },
+    {
+      "first": "\ud83d\ude00abc",
+      "second": "\ud83d\ude00axc",
+      "expected": 0.75
+    },
+    {
+      "first": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "second": "baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected": 0.0
+    },
+    {
+      "first": "baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "second": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected": 0.0
+    },
+    {
+      "first": "abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab",
+      "second": "babababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababa",
+      "expected": 0.0
+    },
+    {
+      "first": "bbbaccb\ud83d\ude00a\ud83d\ude00b\ud83d\ude00\ud83d\ude00ccc",
+      "second": "\ud83d\ude00a\ud83d\ude00\ud83d\ude00",
+      "expected": 0.4
+    },
+    {
+      "first": "\ud83d\ude00c\ud83d\ude00c",
+      "second": "c\ud83d\ude00cba\ud83d\ude00b\ud83d\ude00a\ud83d\ude00",
+      "expected": 0.42857142857142855
+    },
+    {
+      "first": "\ud83d\ude00aba\ud83d\ude00b\ud83d\ude00b\ud83d\ude00\ud83d\ude00ac\ud83d\ude00cbb",
+      "second": "acccac\ud83d\ude00b",
+      "expected": 0.4166666666666667
+    },
+    {
+      "first": "ac\ud83d\ude00ba\ud83d\ude00acba",
+      "second": "ba\ud83d\ude00\ud83d\ude00ac",
+      "expected": 0.625
+    },
+    {
+      "first": "ab\ud83d\ude00\ud83d\ude00\ud83d\ude00a\ud83d\ude00\ud83d\ude00c\ud83d\ude00a\ud83d\ude00b\ud83d\ude00bbabcbb",
+      "second": "bcc\ud83d\ude00a\ud83d\ude00c\ud83d\ude00a\ud83d\ude00c\ud83d\ude00",
+      "expected": 0.5454545454545454
+    },
+    {
+      "first": "ccb\ud83d\ude00\ud83d\ude00ab",
+      "second": "\ud83d\ude00c\ud83d\ude00cca",
+      "expected": 0.46153846153846156
+    },
+    {
+      "first": "\ud83d\ude00a\ud83d\ude00aba\ud83d\ude00abb",
+      "second": "cc",
+      "expected": 0.0
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00cab\ud83d\ude00",
+      "second": "cbab",
+      "expected": 0.6
+    },
+    {
+      "first": "",
+      "second": "bbaacaacba\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00",
+      "expected": 0.0
+    },
+    {
+      "first": "c\ud83d\ude00ac\ud83d\ude00\ud83d\ude00bacacbbc",
+      "second": "ba\ud83d\ude00b\ud83d\ude00\ud83d\ude00acbbbca",
+      "expected": 0.5925925925925926
+    },
+    {
+      "first": "\ud83d\ude00bbabcbac\ud83d\ude00c\ud83d\ude00ab\ud83d\ude00",
+      "second": "c\ud83d\ude00acacb\ud83d\ude00\ud83d\ude00\ud83d\ude00bcac\ud83d\ude00bb\ud83d\ude00\ud83d\ude00\ud83d\ude00baba",
+      "expected": 0.3076923076923077
+    },
+    {
+      "first": "",
+      "second": "abb\ud83d\ude00ba\ud83d\ude00ab\ud83d\ude00b\ud83d\ude00cb\ud83d\ude00\ud83d\ude00caa\ud83d\ude00",
+      "expected": 0.0
+    },
+    {
+      "first": "c\ud83d\ude00bacbcb\ud83d\ude00b\ud83d\ude00c\ud83d\ude00a\ud83d\ude00cbcbc",
+      "second": "b\ud83d\ude00\ud83d\ude00\ud83d\ude00aab\ud83d\ude00\ud83d\ude00acbbac\ud83d\ude00\ud83d\ude00bbca\ud83d\ude00",
+      "expected": 0.38095238095238093
+    },
+    {
+      "first": "bcbb\ud83d\ude00\ud83d\ude00bbaaaa\ud83d\ude00ca\ud83d\ude00bbaaa\ud83d\ude00ba",
+      "second": "\ud83d\ude00cccc\ud83d\ude00acc",
+      "expected": 0.18181818181818182
+    },
+    {
+      "first": "c\ud83d\ude00cbc\ud83d\ude00\ud83d\ude00\ud83d\ude00a",
+      "second": "bb\ud83d\ude00\ud83d\ude00bac\ud83d\ude00b\ud83d\ude00\ud83d\ude00",
+      "expected": 0.5
+    },
+    {
+      "first": "c\ud83d\ude00a",
+      "second": "\ud83d\ude00cbccbc\ud83d\ude00ac\ud83d\ude00a",
+      "expected": 0.4
+    },
+    {
+      "first": "bcbbaaa",
+      "second": "ab\ud83d\ude00c\ud83d\ude00abcbca\ud83d\ude00\ud83d\ude00a",
+      "expected": 0.47619047619047616
+    },
+    {
+      "first": "cc",
+      "second": "\ud83d\ude00\ud83d\ude00c\ud83d\ude00",
+      "expected": 0.3333333333333333
+    },
+    {
+      "first": "ba\ud83d\ude00bacb\ud83d\ude00bacbac\ud83d\ude00\ud83d\ude00cb\ud83d\ude00aaac",
+      "second": "bbba\ud83d\ude00a",
+      "expected": 0.27586206896551724
+    },
+    {
+      "first": "abc\ud83d\ude00bac\ud83d\ude00",
+      "second": "",
+      "expected": 0.0
+    },
+    {
+      "first": "",
+      "second": "c\ud83d\ude00cb\ud83d\ude00\ud83d\ude00\ud83d\ude00bcbabbba\ud83d\ude00babc",
+      "expected": 0.0
+    },
+    {
+      "first": "",
+      "second": "bcbba",
+      "expected": 0.0
+    },
+    {
+      "first": "a\ud83d\ude00baabbc\ud83d\ude00baaaaccbbbb\ud83d\ude00c",
+      "second": "aabca\ud83d\ude00aca\ud83d\ude00\ud83d\ude00cb\ud83d\ude00c\ud83d\ude00",
+      "expected": 0.5789473684210527
+    },
+    {
+      "first": "bbcc\ud83d\ude00aacbcba\ud83d\ude00a",
+      "second": "\ud83d\ude00acb\ud83d\ude00bc\ud83d\ude00bc",
+      "expected": 0.5
+    },
+    {
+      "first": "bac\ud83d\ude00\ud83d\ude00bba\ud83d\ude00cb\ud83d\ude00ba\ud83d\ude00\ud83d\ude00acc\ud83d\ude00a\ud83d\ude00",
+      "second": "bcbab",
+      "expected": 0.2222222222222222
+    },
+    {
+      "first": "\ud83d\ude00c\ud83d\ude00b\ud83d\ude00\ud83d\ude00\ud83d\ude00acacbccb",
+      "second": "c\ud83d\ude00ba",
+      "expected": 0.42105263157894735
+    },
+    {
+      "first": "\ud83d\ude00bb\ud83d\ude00a\ud83d\ude00bcacabccbbbbaab\ud83d\ude00\ud83d\ude00",
+      "second": "cc\ud83d\ude00ca\ud83d\ude00\ud83d\ude00cb\ud83d\ude00b\ud83d\ude00",
+      "expected": 0.17142857142857143
+    },
+    {
+      "first": "a",
+      "second": "\ud83d\ude00aca\ud83d\ude00ca\ud83d\ude00\ud83d\ude00ccab\ud83d\ude00bccba\ud83d\ude00",
+      "expected": 0.09523809523809523
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00\ud83d\ude00bccccaaaca\ud83d\ude00cb\ud83d\ude00aa\ud83d\ude00b\ud83d\ude00b",
+      "second": "",
+      "expected": 0.0
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00",
+      "second": "ccacbbccbc\ud83d\ude00abc",
+      "expected": 0.125
+    },
+    {
+      "first": "a\ud83d\ude00cac\ud83d\ude00",
+      "second": "\ud83d\ude00ca\ud83d\ude00b\ud83d\ude00c\ud83d\ude00",
+      "expected": 0.7142857142857143
+    },
+    {
+      "first": "\ud83d\ude00abbc\ud83d\ude00\ud83d\ude00ba",
+      "second": "cab\ud83d\ude00\ud83d\ude00\ud83d\ude00accbbab\ud83d\ude00c\ud83d\ude00",
+      "expected": 0.48
+    },
+    {
+      "first": "bbbcaabcb",
+      "second": "b\ud83d\ude00baa",
+      "expected": 0.5714285714285714
+    },
+    {
+      "first": "aa\ud83d\ude00bccaacbaa\ud83d\ude00bca\ud83d\ude00ba\ud83d\ude00b",
+      "second": "bcba\ud83d\ude00c",
+      "expected": 0.4444444444444444
+    },
+    {
+      "first": "c",
+      "second": "cba\ud83d\ude00\ud83d\ude00b\ud83d\ude00abc",
+      "expected": 0.18181818181818182
+    },
+    {
+      "first": "",
+      "second": "baac\ud83d\ude00b\ud83d\ude00abaaa\ud83d\ude00aacbcaab",
+      "expected": 0.0
+    },
+    {
+      "first": "aa\ud83d\ude00\ud83d\ude00",
+      "second": "ac\ud83d\ude00\ud83d\ude00a\ud83d\ude00bccccababb",
+      "expected": 0.3
+    },
+    {
+      "first": "c\ud83d\ude00c",
+      "second": "cc\ud83d\ude00bc",
+      "expected": 0.75
+    },
+    {
+      "first": "c\ud83d\ude00ab\ud83d\ude00\ud83d\ude00",
+      "second": "\ud83d\ude00b\ud83d\ude00bc\ud83d\ude00accbacaaaccb\ud83d\ude00bbba\ud83d\ude00",
+      "expected": 0.4
+    },
+    {
+      "first": "abacb\ud83d\ude00ca\ud83d\ude00c\ud83d\ude00ccbbabbcc\ud83d\ude00bbc",
+      "second": "ab\ud83d\ude00abba\ud83d\ude00a",
+      "expected": 0.42424242424242425
+    },
+    {
+      "first": "bc",
+      "second": "cbca\ud83d\ude00b\ud83d\ude00a\ud83d\ude00a",
+      "expected": 0.3333333333333333
+    },
+    {
+      "first": "b\ud83d\ude00cbc\ud83d\ude00abb\ud83d\ude00\ud83d\ude00accc",
+      "second": "a",
+      "expected": 0.125
+    },
+    {
+      "first": "\ud83d\ude00b\ud83d\ude00\ud83d\ude00baa\ud83d\ude00c\ud83d\ude00bcb",
+      "second": "c\ud83d\ude00acc",
+      "expected": 0.3333333333333333
+    },
+    {
+      "first": "cbcb\ud83d\ude00\ud83d\ude00acb",
+      "second": "\ud83d\ude00acbb\ud83d\ude00a\ud83d\ude00\ud83d\ude00",
+      "expected": 0.4444444444444444
+    },
+    {
+      "first": "\ud83d\ude00ba\ud83d\ude00bc\ud83d\ude00\ud83d\ude00a\ud83d\ude00cc",
+      "second": "bcc\ud83d\ude00ab\ud83d\ude00caacaab",
+      "expected": 0.5384615384615384
+    },
+    {
+      "first": "cbaaa\ud83d\ude00ab\ud83d\ude00",
+      "second": "cb",
+      "expected": 0.36363636363636365
+    },
+    {
+      "first": "bc\ud83d\ude00bbabbbbaac\ud83d\ude00",
+      "second": "cabcbaaabbc\ud83d\ude00ccab",
+      "expected": 0.3333333333333333
+    },
+    {
+      "first": "baacab\ud83d\ude00c\ud83d\ude00b",
+      "second": "b\ud83d\ude00abbb\ud83d\ude00\ud83d\ude00",
+      "expected": 0.5555555555555556
+    },
+    {
+      "first": "abccb\ud83d\ude00\ud83d\ude00\ud83d\ude00c\ud83d\ude00c\ud83d\ude00b\ud83d\ude00acc",
+      "second": "ba\ud83d\ude00",
+      "expected": 0.2
+    },
+    {
+      "first": "b\ud83d\ude00aa\ud83d\ude00\ud83d\ude00bbbcacccaaabcc",
+      "second": "c\ud83d\ude00ccbacbbaa",
+      "expected": 0.1935483870967742
+    },
+    {
+      "first": "",
+      "second": "a\ud83d\ude00\ud83d\ude00",
+      "expected": 0.0
+    },
+    {
+      "first": "",
+      "second": "\ud83d\ude00\ud83d\ude00\ud83d\ude00bcac\ud83d\ude00aa\ud83d\ude00b",
+      "expected": 0.0
+    },
+    {
+      "first": "bb\ud83d\ude00aa\ud83d\ude00",
+      "second": "c\ud83d\ude00\ud83d\ude00cbcaac\ud83d\ude00\ud83d\ude00acccbb\ud83d\ude00aba",
+      "expected": 0.37037037037037035
+    },
+    {
+      "first": "bcccac\ud83d\ude00abb\ud83d\ude00c\ud83d\ude00\ud83d\ude00\ud83d\ude00ca\ud83d\ude00a",
+      "second": "b\ud83d\ude00ab",
+      "expected": 0.34782608695652173
+    },
+    {
+      "first": "ccbaa\ud83d\ude00cb\ud83d\ude00\ud83d\ude00ccaca",
+      "second": "cab\ud83d\ude00\ud83d\ude00bbacac",
+      "expected": 0.6153846153846154
+    },
+    {
+      "first": "\ud83d\ude00c\ud83d\ude00a\ud83d\ude00\ud83d\ude00ab\ud83d\ude00\ud83d\ude00bbca\ud83d\ude00b",
+      "second": "aa\ud83d\ude00\ud83d\ude00cb\ud83d\ude00aba\ud83d\ude00a\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00",
+      "expected": 0.5
+    },
+    {
+      "first": "ccbb",
+      "second": "\ud83d\ude00cccbccca\ud83d\ude00\ud83d\ude00",
+      "expected": 0.4
+    },
+    {
+      "first": "cbc\ud83d\ude00aa\ud83d\ude00\ud83d\ude00bcabcc",
+      "second": "babc\ud83d\ude00cbaacb\ud83d\ude00",
+      "expected": 0.46153846153846156
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00ac\ud83d\ude00cc\ud83d\ude00a\ud83d\ude00\ud83d\ude00bb",
+      "second": "\ud83d\ude00b\ud83d\ude00\ud83d\ude00abcbcb\ud83d\ude00cbaaababa",
+      "expected": 0.5714285714285714
+    },
+    {
+      "first": "bbcc",
+      "second": "ba\ud83d\ude00\ud83d\ude00aa",
+      "expected": 0.2
+    },
+    {
+      "first": "bacccba",
+      "second": "caac\ud83d\ude00c\ud83d\ude00cbc\ud83d\ude00c\ud83d\ude00cca\ud83d\ude00bb\ud83d\ude00\ud83d\ude00ca",
+      "expected": 0.4
+    },
+    {
+      "first": "cc",
+      "second": "cbccaab\ud83d\ude00bca\ud83d\ude00cccab",
+      "expected": 0.21052631578947367
+    },
+    {
+      "first": "aca\ud83d\ude00c",
+      "second": "ab\ud83d\ude00\ud83d\ude00\ud83d\ude00bc\ud83d\ude00abccbcaaaab\ud83d\ude00\ud83d\ude00a",
+      "expected": 0.2962962962962963
+    },
+    {
+      "first": "a\ud83d\ude00cca\ud83d\ude00cc",
+      "second": "b\ud83d\ude00aba",
+      "expected": 0.3076923076923077
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00",
+      "second": "\ud83d\ude00\ud83d\ude00abca",
+      "expected": 0.5
+    },
+    {
+      "first": "cb\ud83d\ude00a\ud83d\ude00\ud83d\ude00ac\ud83d\ude00a\ud83d\ude00\ud83d\ude00c\ud83d\ude00aaaaabaa",
+      "second": "\ud83d\ude00aaba\ud83d\ude00acbcbba\ud83d\ude00cabbcbbb\ud83d\ude00c",
+      "expected": 0.2608695652173913
+    },
+    {
+      "first": "b\ud83d\ude00c\ud83d\ude00",
+      "second": "bababba\ud83d\ude00aaca\ud83d\ude00cab\ud83d\ude00c",
+      "expected": 0.2727272727272727
+    },
+    {
+      "first": "ba\ud83d\ude00abacbca\ud83d\ude00bc\ud83d\ude00b\ud83d\ude00\ud83d\ude00",
+      "second": "\ud83d\ude00cbca\ud83d\ude00a\ud83d\ude00aab\ud83d\ude00\ud83d\ude00c\ud83d\ude00\ud83d\ude00a",
+      "expected": 0.5882352941176471
+    },
+    {
+      "first": "\ud83d\ude00baa\ud83d\ude00bb",
+      "second": "cc",
+      "expected": 0.0
+    },
+    {
+      "first": "cbcc\ud83d\ude00accb",
+      "second": "ca\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00ccccabc",
+      "expected": 0.2727272727272727
+    },
+    {
+      "first": "aaa",
+      "second": "ca\ud83d\ude00abc\ud83d\ude00a\ud83d\ude00aab\ud83d\ude00aaabb\ud83d\ude00cb\ud83d\ude00",
+      "expected": 0.24
+    },
+    {
+      "first": "ccaac",
+      "second": "bb\ud83d\ude00c\ud83d\ude00\ud83d\ude00bbaac\ud83d\ude00",
+      "expected": 0.47058823529411764
+    },
+    {
+      "first": "ab\ud83d\ude00a\ud83d\ude00\ud83d\ude00aa\ud83d\ude00",
+      "second": "\ud83d\ude00",
+      "expected": 0.2
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00a\ud83d\ude00a\ud83d\ude00\ud83d\ude00a",
+      "second": "ccbbabbbbaabac",
+      "expected": 0.2727272727272727
+    },
+    {
+      "first": "accbbccaab\ud83d\ude00cc\ud83d\ude00b\ud83d\ude00",
+      "second": "acccacacbac\ud83d\ude00\ud83d\ude00\ud83d\ude00bcac\ud83d\ude00ac",
+      "expected": 0.4864864864864865
+    },
+    {
+      "first": "acaaac\ud83d\ude00\ud83d\ude00aaabaa\ud83d\ude00ccbac",
+      "second": "acbc\ud83d\ude00abcc\ud83d\ude00b\ud83d\ude00acbb\ud83d\ude00cb",
+      "expected": 0.46153846153846156
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00\ud83d\ude00",
+      "second": "bcccbbcba\ud83d\ude00\ud83d\ude00\ud83d\ude00acabbaaab\ud83d\ude00a",
+      "expected": 0.23076923076923078
+    },
+    {
+      "first": "bcbaa\ud83d\ude00bca\ud83d\ude00b\ud83d\ude00acbc\ud83d\ude00c\ud83d\ude00\ud83d\ude00bb\ud83d\ude00",
+      "second": "caa\ud83d\ude00bbbb\ud83d\ude00c\ud83d\ude00\ud83d\ude00bccbbabbbc",
+      "expected": 0.5777777777777777
+    },
+    {
+      "first": "b\ud83d\ude00cccca\ud83d\ude00bba\ud83d\ude00c\ud83d\ude00bc",
+      "second": "cc\ud83d\ude00ca",
+      "expected": 0.2857142857142857
+    },
+    {
+      "first": "c",
+      "second": "bcbccb\ud83d\ude00b\ud83d\ude00bb\ud83d\ude00cbaabc\ud83d\ude00c",
+      "expected": 0.09523809523809523
+    },
+    {
+      "first": "c\ud83d\ude00bcbbcc\ud83d\ude00a\ud83d\ude00\ud83d\ude00\ud83d\ude00",
+      "second": "bccaca",
+      "expected": 0.42105263157894735
+    },
+    {
+      "first": "acaaa\ud83d\ude00\ud83d\ude00cba\ud83d\ude00\ud83d\ude00ba\ud83d\ude00\ud83d\ude00c\ud83d\ude00a\ud83d\ude00baa",
+      "second": "ac\ud83d\ude00b\ud83d\ude00cb\ud83d\ude00b\ud83d\ude00\ud83d\ude00cc\ud83d\ude00c",
+      "expected": 0.3684210526315789
+    },
+    {
+      "first": "accb\ud83d\ude00cc\ud83d\ude00a\ud83d\ude00",
+      "second": "abbba\ud83d\ude00\ud83d\ude00c\ud83d\ude00\ud83d\ude00aabbaaaa\ud83d\ude00ca",
+      "expected": 0.45161290322580644
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00aaaab\ud83d\ude00ccbbbccba\ud83d\ude00a",
+      "second": "ac\ud83d\ude00\ud83d\ude00\ud83d\ude00",
+      "expected": 0.25
+    },
+    {
+      "first": "\ud83d\ude00",
+      "second": "\ud83d\ude00abcbabbcbcc\ud83d\ude00b",
+      "expected": 0.13333333333333333
+    },
+    {
+      "first": "",
+      "second": "bba\ud83d\ude00b\ud83d\ude00cbbbbaabaaab\ud83d\ude00",
+      "expected": 0.0
+    },
+    {
+      "first": "aacacbbbcbb\ud83d\ude00b\ud83d\ude00cb",
+      "second": "aa\ud83d\ude00\ud83d\ude00\ud83d\ude00a\ud83d\ude00\ud83d\ude00ccb\ud83d\ude00",
+      "expected": 0.42857142857142855
+    },
+    {
+      "first": "bc\ud83d\ude00ccbcb\ud83d\ude00cca\ud83d\ude00\ud83d\ude00c\ud83d\ude00ba\ud83d\ude00\ud83d\ude00baac",
+      "second": "a\ud83d\ude00a\ud83d\ude00a\ud83d\ude00ccbcaaac",
+      "expected": 0.47368421052631576
+    },
+    {
+      "first": "cbcccaaacc\ud83d\ude00ccbb\ud83d\ude00\ud83d\ude00cc",
+      "second": "\ud83d\ude00a\ud83d\ude00bc\ud83d\ude00cccb\ud83d\ude00acb\ud83d\ude00\ud83d\ude00cbacc",
+      "expected": 0.55
+    },
+    {
+      "first": "\ud83d\ude00bcac\ud83d\ude00a\ud83d\ude00a\ud83d\ude00\ud83d\ude00bcb\ud83d\ude00b\ud83d\ude00",
+      "second": "bacbbaab",
+      "expected": 0.48
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00ca",
+      "second": "b\ud83d\ude00ba",
+      "expected": 0.5
+    },
+    {
+      "first": "abbbc\ud83d\ude00b\ud83d\ude00cab\ud83d\ude00\ud83d\ude00",
+      "second": "a",
+      "expected": 0.14285714285714285
+    },
+    {
+      "first": "caaaccbb\ud83d\ude00ba\ud83d\ude00\ud83d\ude00a",
+      "second": "\ud83d\ude00bbbcacbbbaaacaa",
+      "expected": 0.4666666666666667
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00cbbc\ud83d\ude00\ud83d\ude00cac\ud83d\ude00b\ud83d\ude00aaccc",
+      "second": "\ud83d\ude00\ud83d\ude00babcac\ud83d\ude00\ud83d\ude00c\ud83d\ude00b\ud83d\ude00",
+      "expected": 0.6060606060606061
+    },
+    {
+      "first": "accbb",
+      "second": "\ud83d\ude00cbbcc\ud83d\ude00cbabaaaa\ud83d\ude00c",
+      "expected": 0.2727272727272727
+    },
+    {
+      "first": "b\ud83d\ude00cccacccbbaa",
+      "second": "baa\ud83d\ude00ab",
+      "expected": 0.3157894736842105
+    },
+    {
+      "first": "\ud83d\ude00cb\ud83d\ude00ca",
+      "second": "ccb",
+      "expected": 0.4444444444444444
+    },
+    {
+      "first": "cccbbab\ud83d\ude00\ud83d\ude00ac",
+      "second": "ab\ud83d\ude00\ud83d\ude00a\ud83d\ude00\ud83d\ude00aca\ud83d\ude00b\ud83d\ude00abcacc",
+      "expected": 0.4
+    },
+    {
+      "first": "\ud83d\ude00cb",
+      "second": "ba\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00acbccb",
+      "expected": 0.4
+    },
+    {
+      "first": "\ud83d\ude00\ud83d\ude00",
+      "second": "ccacccabc\ud83d\ude00\ud83d\ude00caacab",
+      "expected": 0.21052631578947367
+    }
+  ],
+  "closest": [
+    {
+      "word": "postgre",
+      "candidates": [
+        "postgres",
+        "tsql"
+      ],
+      "expected": "postgres"
+    },
+    {
+      "word": "cat",
+      "candidates": [
+        "bat",
+        "hat"
+      ],
+      "expected": "hat"
+    },
+    {
+      "word": "zzz",
+      "candidates": [
+        "postgres",
+        "tsql"
+      ],
+      "expected": null
+    },
+    {
+      "word": "",
+      "candidates": [
+        "",
+        "a"
+      ],
+      "expected": ""
+    },
+    {
+      "word": "select",
+      "candidates": [
+        "select",
+        "selector"
+      ],
+      "expected": "select"
+    },
+    {
+      "word": "\ud83d\ude00a",
+      "candidates": [
+        "\ud83d\ude00b",
+        "\ud83d\ude00c"
+      ],
+      "expected": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "repo": "https://github.com/tobymao/sqlglot",
+  "tag": "v30.27.0",
+  "commit": "5c101a25e",
+  "baseline_description": "v30.27.0-1-g5c101a25e",
+  "ported_at": "2026-11-03",
+  "status": "Port complete against the v30.27.0 corpus (26,487 / 26,487); verified again 2026-11-05",
+  "target_framework": "net10.0"
+}

@@ -1,0 +1,9076 @@
+{
+ "oracle": "sqlglot v30.27.0",
+ "parses": [
+  {
+   "text": "'R-25-0000008' MEMBER OF defect.also_on",
+   "class": "JSONArrayContains",
+   "sql": "JSON_ARRAY_CONTAINS('R-25-0000008', defect.also_on)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.json.JSONArrayContains"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 0,
+      "end": 13
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "R-25-0000008"
+    },
+    {
+     "i": 1,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 39,
+      "start": 32,
+      "end": 38
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "also_on"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 4,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 31,
+      "start": 25,
+      "end": 30
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 8,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "('L2-100' MEMBER OF process_measure.l2_code OR 'L2-200' MEMBER OF process_measure.l2_code)",
+   "class": "Paren",
+   "sql": "(JSON_ARRAY_CONTAINS('L2-100', process_measure.l2_code) OR JSON_ARRAY_CONTAINS('L2-200', process_measure.l2_code))",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Paren"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Or"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.json.JSONArrayContains"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 1,
+      "end": 8
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "L2-100"
+    },
+    {
+     "i": 3,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 2,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 43,
+      "start": 36,
+      "end": 42
+     }
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 7,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 6,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 35,
+      "start": 20,
+      "end": 34
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 10,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "expression",
+     "c": "sqlglot.expressions.json.JSONArrayContains"
+    },
+    {
+     "i": 13,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 55,
+      "start": 47,
+      "end": 54
+     }
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "v": "L2-200"
+    },
+    {
+     "i": 14,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 13,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 17,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 89,
+      "start": 82,
+      "end": 88
+     }
+    },
+    {
+     "i": 18,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 18,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 17,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 81,
+      "start": 66,
+      "end": 80
+     }
+    },
+    {
+     "i": 21,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 21,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "(process_measure.l2_code = 'L2-003424' OR process_measure.heat_code = 'H25-00001')",
+   "class": "Paren",
+   "sql": "(process_measure.l2_code = 'L2-003424' OR process_measure.heat_code = 'H25-00001')",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Paren"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Or"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 24,
+      "start": 17,
+      "end": 23
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 3,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 16,
+      "start": 1,
+      "end": 15
+     }
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 7,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 38,
+      "start": 27,
+      "end": 37
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "L2-003424"
+    },
+    {
+     "i": 10,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 1,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 13,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 67,
+      "start": 58,
+      "end": 66
+     }
+    },
+    {
+     "i": 15,
+     "k": "this",
+     "v": "heat_code"
+    },
+    {
+     "i": 15,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 14,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 57,
+      "start": 42,
+      "end": 56
+     }
+    },
+    {
+     "i": 18,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 18,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 13,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 81,
+      "start": 70,
+      "end": 80
+     }
+    },
+    {
+     "i": 21,
+     "k": "this",
+     "v": "H25-00001"
+    },
+    {
+     "i": 21,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "100.0 * SUM(CASE WHEN production.outcome = 'PRIME' THEN production.weight ELSE 0 END) / NULLIF(SUM(production.weight), 0)",
+   "class": "Div",
+   "sql": "100.0 * SUM(CASE WHEN production.outcome = 'PRIME' THEN production.weight ELSE 0 END) / NULLIF(SUM(production.weight), 0)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Div"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Mul"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "100.0"
+    },
+    {
+     "i": 2,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "expression",
+     "c": "sqlglot.expressions.aggregate.Sum",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 8,
+      "end": 10
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "c": "sqlglot.expressions.functions.Case"
+    },
+    {
+     "i": 6,
+     "k": "ifs",
+     "a": true,
+     "c": "sqlglot.expressions.functions.If"
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 40,
+      "start": 33,
+      "end": 39
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "outcome"
+    },
+    {
+     "i": 10,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 9,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 32,
+      "start": 22,
+      "end": 31
+     }
+    },
+    {
+     "i": 13,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 13,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 8,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 50,
+      "start": 43,
+      "end": 49
+     }
+    },
+    {
+     "i": 16,
+     "k": "this",
+     "v": "PRIME"
+    },
+    {
+     "i": 16,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 7,
+     "k": "true",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 19,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 73,
+      "start": 67,
+      "end": 72
+     }
+    },
+    {
+     "i": 20,
+     "k": "this",
+     "v": "weight"
+    },
+    {
+     "i": 20,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 19,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 66,
+      "start": 56,
+      "end": 65
+     }
+    },
+    {
+     "i": 23,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 23,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 6,
+     "k": "default",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 80,
+      "start": 79,
+      "end": 79
+     }
+    },
+    {
+     "i": 26,
+     "k": "this",
+     "v": "0"
+    },
+    {
+     "i": 26,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Nullif",
+     "m": {
+      "line": 1,
+      "col": 94,
+      "start": 88,
+      "end": 93
+     }
+    },
+    {
+     "i": 29,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Sum",
+     "m": {
+      "line": 1,
+      "col": 98,
+      "start": 95,
+      "end": 97
+     }
+    },
+    {
+     "i": 30,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 31,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 116,
+      "start": 110,
+      "end": 115
+     }
+    },
+    {
+     "i": 32,
+     "k": "this",
+     "v": "weight"
+    },
+    {
+     "i": 32,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 31,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 109,
+      "start": 99,
+      "end": 108
+     }
+    },
+    {
+     "i": 35,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 35,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 29,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 120,
+      "start": 119,
+      "end": 119
+     }
+    },
+    {
+     "i": 38,
+     "k": "this",
+     "v": "0"
+    },
+    {
+     "i": 38,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "typed",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "safe",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "100.0 * SUM(CASE WHEN production.outcome = 'SCRAP' THEN production.weight ELSE 0 END) / NULLIF(SUM(production.weight), 0)",
+   "class": "Div",
+   "sql": "100.0 * SUM(CASE WHEN production.outcome = 'SCRAP' THEN production.weight ELSE 0 END) / NULLIF(SUM(production.weight), 0)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Div"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Mul"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "100.0"
+    },
+    {
+     "i": 2,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "expression",
+     "c": "sqlglot.expressions.aggregate.Sum",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 8,
+      "end": 10
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "c": "sqlglot.expressions.functions.Case"
+    },
+    {
+     "i": 6,
+     "k": "ifs",
+     "a": true,
+     "c": "sqlglot.expressions.functions.If"
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 40,
+      "start": 33,
+      "end": 39
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "outcome"
+    },
+    {
+     "i": 10,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 9,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 32,
+      "start": 22,
+      "end": 31
+     }
+    },
+    {
+     "i": 13,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 13,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 8,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 50,
+      "start": 43,
+      "end": 49
+     }
+    },
+    {
+     "i": 16,
+     "k": "this",
+     "v": "SCRAP"
+    },
+    {
+     "i": 16,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 7,
+     "k": "true",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 19,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 73,
+      "start": 67,
+      "end": 72
+     }
+    },
+    {
+     "i": 20,
+     "k": "this",
+     "v": "weight"
+    },
+    {
+     "i": 20,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 19,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 66,
+      "start": 56,
+      "end": 65
+     }
+    },
+    {
+     "i": 23,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 23,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 6,
+     "k": "default",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 80,
+      "start": 79,
+      "end": 79
+     }
+    },
+    {
+     "i": 26,
+     "k": "this",
+     "v": "0"
+    },
+    {
+     "i": 26,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Nullif",
+     "m": {
+      "line": 1,
+      "col": 94,
+      "start": 88,
+      "end": 93
+     }
+    },
+    {
+     "i": 29,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Sum",
+     "m": {
+      "line": 1,
+      "col": 98,
+      "start": 95,
+      "end": 97
+     }
+    },
+    {
+     "i": 30,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 31,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 116,
+      "start": 110,
+      "end": 115
+     }
+    },
+    {
+     "i": 32,
+     "k": "this",
+     "v": "weight"
+    },
+    {
+     "i": 32,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 31,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 109,
+      "start": 99,
+      "end": 108
+     }
+    },
+    {
+     "i": 35,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 35,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 29,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 120,
+      "start": 119,
+      "end": 119
+     }
+    },
+    {
+     "i": 38,
+     "k": "this",
+     "v": "0"
+    },
+    {
+     "i": 38,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "typed",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "safe",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "AVG(defect.length) > 3",
+   "class": "GT",
+   "sql": "AVG(defect.length) > 3",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.GT"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Avg",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 17,
+      "start": 11,
+      "end": 16
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "length"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 4,
+      "end": 9
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 22,
+      "start": 21,
+      "end": 21
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "3"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "AVG(defect.length) AS \"mean_length\"",
+   "class": "Alias",
+   "sql": "AVG(defect.length) AS \"mean_length\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Avg",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 17,
+      "start": 11,
+      "end": 16
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "length"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 4,
+      "end": 9
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 35,
+      "start": 22,
+      "end": 34
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "mean_length"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "AVG(process_measure.value) AS \"mean_value\"",
+   "class": "Alias",
+   "sql": "AVG(process_measure.value) AS \"mean_value\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Avg",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 25,
+      "start": 20,
+      "end": 24
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 4,
+      "end": 18
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 42,
+      "start": 30,
+      "end": 41
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "mean_value"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "CALENDAR_DATE",
+   "class": "Column",
+   "sql": "CALENDAR_DATE",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 13,
+      "start": 0,
+      "end": 12
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "CALENDAR_DATE"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "CAST(defect.id AS \"sql_variant) IS NOT NULL OR 1=1; --\")",
+   "class": "Cast",
+   "sql": "CAST(defect.id AS sql_variant) IS NOT NULL OR 1=1; --)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "USER-DEFINED"
+      },
+      {
+       "i": 0,
+       "k": "kind",
+       "v": "sql_variant) IS NOT NULL OR 1=1; --"
+      }
+     ]
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 12,
+      "end": 13
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 5,
+      "end": 10
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "USER-DEFINED"
+    },
+    {
+     "i": 8,
+     "k": "kind",
+     "v": "sql_variant) IS NOT NULL OR 1=1; --"
+    }
+   ]
+  },
+  {
+   "text": "CAST(defect.id AS \"sql_variant) IS NOT NULL OR 1=1; SELECT name FROM sys.tables; --\") IS NULL",
+   "class": "Is",
+   "sql": "CAST(defect.id AS sql_variant) IS NOT NULL OR 1=1; SELECT name FROM sys.tables; --) IS NULL",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Is"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "USER-DEFINED"
+      },
+      {
+       "i": 0,
+       "k": "kind",
+       "v": "sql_variant) IS NOT NULL OR 1=1; SELECT name FROM sys.tables; --"
+      }
+     ]
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 12,
+      "end": 13
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 5,
+      "end": 10
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "USER-DEFINED"
+    },
+    {
+     "i": 9,
+     "k": "kind",
+     "v": "sql_variant) IS NOT NULL OR 1=1; SELECT name FROM sys.tables; --"
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Null"
+    }
+   ]
+  },
+  {
+   "text": "COUNT(DISTINCT defect.rail_id)",
+   "class": "Count",
+   "sql": "COUNT(DISTINCT defect.rail_id)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.aggregate.Count",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Distinct"
+    },
+    {
+     "i": 1,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 29,
+      "start": 22,
+      "end": 28
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 21,
+      "start": 15,
+      "end": 20
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "big_int",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "COUNT(DISTINCT process_measure.sampled_at) AS \"instants\"",
+   "class": "Alias",
+   "sql": "COUNT(DISTINCT process_measure.sampled_at) AS \"instants\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Count",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Distinct"
+    },
+    {
+     "i": 2,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 41,
+      "start": 31,
+      "end": 40
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 3,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 30,
+      "start": 15,
+      "end": 29
+     }
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 7,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "big_int",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 56,
+      "start": 46,
+      "end": 55
+     }
+    },
+    {
+     "i": 11,
+     "k": "this",
+     "v": "instants"
+    },
+    {
+     "i": 11,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "COUNT(DISTINCT process_measure.value) AS \"values\"",
+   "class": "Alias",
+   "sql": "COUNT(DISTINCT process_measure.value) AS \"values\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Count",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Distinct"
+    },
+    {
+     "i": 2,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 36,
+      "start": 31,
+      "end": 35
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 3,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 30,
+      "start": 15,
+      "end": 29
+     }
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 7,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "big_int",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 49,
+      "start": 41,
+      "end": 48
+     }
+    },
+    {
+     "i": 11,
+     "k": "this",
+     "v": "values"
+    },
+    {
+     "i": 11,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "COUNT(defect.id)",
+   "class": "Count",
+   "sql": "COUNT(defect.id)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.aggregate.Count",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 13,
+      "end": 14
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 12,
+      "start": 6,
+      "end": 11
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "big_int",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "COUNT(defect.id) AS \"row_count\"",
+   "class": "Alias",
+   "sql": "COUNT(defect.id) AS \"row_count\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Count",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 13,
+      "end": 14
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 12,
+      "start": 6,
+      "end": 11
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "big_int",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 31,
+      "start": 20,
+      "end": 30
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "row_count"
+    },
+    {
+     "i": 10,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "COUNT(delay.id) AS \"delay_count\"",
+   "class": "Alias",
+   "sql": "COUNT(delay.id) AS \"delay_count\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Count",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 12,
+      "end": 13
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 6,
+      "end": 10
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "delay"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "big_int",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 32,
+      "start": 19,
+      "end": 31
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "delay_count"
+    },
+    {
+     "i": 10,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "COUNT(product.rail_id) AS \"pieces\"",
+   "class": "Alias",
+   "sql": "COUNT(product.rail_id) AS \"pieces\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Count",
+     "m": {
+      "line": 1,
+      "col": 5,
+      "start": 0,
+      "end": 4
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 21,
+      "start": 14,
+      "end": 20
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 13,
+      "start": 6,
+      "end": 12
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "product"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "big_int",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 34,
+      "start": 26,
+      "end": 33
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "pieces"
+    },
+    {
+     "i": 10,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "DATE_KEY",
+   "class": "Column",
+   "sql": "DATE_KEY",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 8,
+      "start": 0,
+      "end": 7
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "DATE_KEY"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "DATE_TRUNC('day', process_measure.sampled_at) AS \"day\"",
+   "class": "Alias",
+   "sql": "DATE_TRUNC('DAY', process_measure.sampled_at) AS \"day\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.temporal.DateTrunc",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 1,
+     "k": "unit",
+     "c": "sqlglot.expressions.core.Literal"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "DAY"
+    },
+    {
+     "i": 2,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 44,
+      "start": 34,
+      "end": 43
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 5,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 33,
+      "start": 18,
+      "end": 32
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 54,
+      "start": 49,
+      "end": 53
+     }
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "v": "day"
+    },
+    {
+     "i": 12,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "DATE_TRUNC('hour', process_measure.sampled_at) AS \"hour\"",
+   "class": "Alias",
+   "sql": "DATE_TRUNC('HOUR', process_measure.sampled_at) AS \"hour\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.temporal.DateTrunc",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 1,
+     "k": "unit",
+     "c": "sqlglot.expressions.core.Literal"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "HOUR"
+    },
+    {
+     "i": 2,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 45,
+      "start": 35,
+      "end": 44
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 5,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 34,
+      "start": 19,
+      "end": 33
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 56,
+      "start": 50,
+      "end": 55
+     }
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "v": "hour"
+    },
+    {
+     "i": 12,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "DATE_TRUNC('month', defect.detected_at) AS \"month\"",
+   "class": "Alias",
+   "sql": "DATE_TRUNC('MONTH', defect.detected_at) AS \"month\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.temporal.DateTrunc",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 1,
+     "k": "unit",
+     "c": "sqlglot.expressions.core.Literal"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "MONTH"
+    },
+    {
+     "i": 2,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 38,
+      "start": 27,
+      "end": 37
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "detected_at"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 5,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 20,
+      "end": 25
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 50,
+      "start": 43,
+      "end": 49
+     }
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "v": "month"
+    },
+    {
+     "i": 12,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "DATE_TRUNC('second', process_measure.sampled_at) AS \"second\"",
+   "class": "Alias",
+   "sql": "DATE_TRUNC('SECOND', process_measure.sampled_at) AS \"second\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.temporal.DateTrunc",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 1,
+     "k": "unit",
+     "c": "sqlglot.expressions.core.Literal"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "SECOND"
+    },
+    {
+     "i": 2,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 47,
+      "start": 37,
+      "end": 46
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 5,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 36,
+      "start": 21,
+      "end": 35
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 60,
+      "start": 52,
+      "end": 59
+     }
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "v": "second"
+    },
+    {
+     "i": 12,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "DATE_TRUNC('week', defect.detected_at) AS \"week\"",
+   "class": "Alias",
+   "sql": "DATE_TRUNC('WEEK', defect.detected_at) AS \"week\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.temporal.DateTrunc",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 1,
+     "k": "unit",
+     "c": "sqlglot.expressions.core.Literal"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "WEEK"
+    },
+    {
+     "i": 2,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 37,
+      "start": 26,
+      "end": 36
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "detected_at"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 5,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 25,
+      "start": 19,
+      "end": 24
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 48,
+      "start": 42,
+      "end": 47
+     }
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "v": "week"
+    },
+    {
+     "i": 12,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "DEFECT_CODE",
+   "class": "Column",
+   "sql": "DEFECT_CODE",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 0,
+      "end": 10
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "DEFECT_CODE"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "DEFECT_DATE",
+   "class": "Column",
+   "sql": "DEFECT_DATE",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 0,
+      "end": 10
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "DEFECT_DATE"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "DEFECT_KEY",
+   "class": "Column",
+   "sql": "DEFECT_KEY",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "DEFECT_KEY"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "DEFECT_LENGTH_MM",
+   "class": "Column",
+   "sql": "DEFECT_LENGTH_MM",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 16,
+      "start": 0,
+      "end": 15
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "DEFECT_LENGTH_MM"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "DEFECT_TYPE_KEY",
+   "class": "Column",
+   "sql": "DEFECT_TYPE_KEY",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "DEFECT_TYPE_KEY"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "DELAY_KEY",
+   "class": "Column",
+   "sql": "DELAY_KEY",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 0,
+      "end": 8
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "DELAY_KEY"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "EXISTS(SELECT 1 FROM hr.salary AS defect WHERE defect.id > 100)",
+   "class": "Exists",
+   "sql": "EXISTS(SELECT 1 FROM hr.salary AS defect WHERE defect.id > 100)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.functions.Exists"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.query.Select"
+    },
+    {
+     "i": 1,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 14,
+      "end": 14
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "1"
+    },
+    {
+     "i": 2,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "from_",
+     "c": "sqlglot.expressions.query.From"
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "c": "sqlglot.expressions.query.Table"
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 30,
+      "start": 24,
+      "end": 29
+     }
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "v": "salary"
+    },
+    {
+     "i": 7,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 6,
+     "k": "db",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 21,
+      "end": 22
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "hr"
+    },
+    {
+     "i": 10,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 6,
+     "k": "alias",
+     "c": "sqlglot.expressions.query.TableAlias"
+    },
+    {
+     "i": 13,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 40,
+      "start": 34,
+      "end": 39
+     }
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 14,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "where",
+     "c": "sqlglot.expressions.query.Where"
+    },
+    {
+     "i": 17,
+     "k": "this",
+     "c": "sqlglot.expressions.core.GT"
+    },
+    {
+     "i": 18,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 19,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 56,
+      "start": 54,
+      "end": 55
+     }
+    },
+    {
+     "i": 20,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 20,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 19,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 53,
+      "start": 47,
+      "end": 52
+     }
+    },
+    {
+     "i": 23,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 23,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 18,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 62,
+      "start": 59,
+      "end": 61
+     }
+    },
+    {
+     "i": 26,
+     "k": "this",
+     "v": "100"
+    },
+    {
+     "i": 26,
+     "k": "is_string",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "MAX(defect.length) AS \"grade\"",
+   "class": "Alias",
+   "sql": "MAX(defect.length) AS \"grade\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Max",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 17,
+      "start": 11,
+      "end": 16
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "length"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 4,
+      "end": 9
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 29,
+      "start": 22,
+      "end": 28
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "grade"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "MAX(process_measure.value)",
+   "class": "Max",
+   "sql": "MAX(process_measure.value)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.aggregate.Max",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 25,
+      "start": 20,
+      "end": 24
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 4,
+      "end": 18
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "MAX(process_measure.value) AS \"max\"",
+   "class": "Alias",
+   "sql": "MAX(process_measure.value) AS \"max\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Max",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 25,
+      "start": 20,
+      "end": 24
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 4,
+      "end": 18
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 35,
+      "start": 30,
+      "end": 34
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "max"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "MAX(process_measure.value) AS \"max_value\"",
+   "class": "Alias",
+   "sql": "MAX(process_measure.value) AS \"max_value\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Max",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 25,
+      "start": 20,
+      "end": 24
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 4,
+      "end": 18
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 41,
+      "start": 30,
+      "end": 40
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "max_value"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "MODE(defect.indications) AS \"usual_indications\"",
+   "class": "Alias",
+   "sql": "MODE(defect.indications) AS \"usual_indications\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Mode",
+     "m": {
+      "line": 1,
+      "col": 4,
+      "start": 0,
+      "end": 3
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 12,
+      "end": 22
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "indications"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 5,
+      "end": 10
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 47,
+      "start": 28,
+      "end": 46
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "usual_indications"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "NULLIF(PRODUCT_GRADE, '115RE')",
+   "class": "Nullif",
+   "sql": "NULLIF(PRODUCT_GRADE, '115RE')",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.functions.Nullif",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 20,
+      "start": 7,
+      "end": 19
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "PRODUCT_GRADE"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 29,
+      "start": 22,
+      "end": 28
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "115RE"
+    },
+    {
+     "i": 5,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY process_measure.value) AS \"ninth_decile\"",
+   "class": "Alias",
+   "sql": "PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY process_measure.value) AS \"ninth_decile\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.WithinGroup"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.PercentileCont",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 16,
+      "end": 18
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "0.9"
+    },
+    {
+     "i": 3,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "expression",
+     "c": "sqlglot.expressions.query.Order"
+    },
+    {
+     "i": 6,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Ordered"
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 65,
+      "start": 60,
+      "end": 64
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 8,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 59,
+      "start": 44,
+      "end": 58
+     }
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 12,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 7,
+     "k": "nulls_first",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 84,
+      "start": 70,
+      "end": 83
+     }
+    },
+    {
+     "i": 16,
+     "k": "this",
+     "v": "ninth_decile"
+    },
+    {
+     "i": 16,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY process_measure.value) AS \"percentile_cont\"",
+   "class": "Alias",
+   "sql": "PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY process_measure.value) AS \"percentile_cont\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.WithinGroup"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.PercentileCont",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 16,
+      "end": 18
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "0.9"
+    },
+    {
+     "i": 3,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "expression",
+     "c": "sqlglot.expressions.query.Order"
+    },
+    {
+     "i": 6,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Ordered"
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 65,
+      "start": 60,
+      "end": 64
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 8,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 59,
+      "start": 44,
+      "end": 58
+     }
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 12,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 7,
+     "k": "nulls_first",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 87,
+      "start": 70,
+      "end": 86
+     }
+    },
+    {
+     "i": 16,
+     "k": "this",
+     "v": "percentile_cont"
+    },
+    {
+     "i": 16,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "PERCENTILE_DISC(0.5) WITHIN GROUP (ORDER BY process_measure.value) AS \"percentile_disc\"",
+   "class": "Alias",
+   "sql": "PERCENTILE_DISC(0.5) WITHIN GROUP (ORDER BY process_measure.value) AS \"percentile_disc\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.WithinGroup"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.PercentileDisc",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 16,
+      "end": 18
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "0.5"
+    },
+    {
+     "i": 3,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "expression",
+     "c": "sqlglot.expressions.query.Order"
+    },
+    {
+     "i": 6,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Ordered"
+    },
+    {
+     "i": 7,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 65,
+      "start": 60,
+      "end": 64
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 8,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 59,
+      "start": 44,
+      "end": 58
+     }
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 12,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 7,
+     "k": "nulls_first",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 87,
+      "start": 70,
+      "end": 86
+     }
+    },
+    {
+     "i": 16,
+     "k": "this",
+     "v": "percentile_disc"
+    },
+    {
+     "i": 16,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "PERIOD_LABEL",
+   "class": "Column",
+   "sql": "PERIOD_LABEL",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 12,
+      "start": 0,
+      "end": 11
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "PERIOD_LABEL"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "PRODUCED_WEIGHT_T",
+   "class": "Column",
+   "sql": "PRODUCED_WEIGHT_T",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 17,
+      "start": 0,
+      "end": 16
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "PRODUCED_WEIGHT_T"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "PRODUCT_GRADE",
+   "class": "Column",
+   "sql": "PRODUCT_GRADE",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 13,
+      "start": 0,
+      "end": 12
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "PRODUCT_GRADE"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "PRODUCT_KEY",
+   "class": "Column",
+   "sql": "PRODUCT_KEY",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 0,
+      "end": 10
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "PRODUCT_KEY"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "QUALITY_OUTCOME",
+   "class": "Column",
+   "sql": "QUALITY_OUTCOME",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "QUALITY_OUTCOME"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "RAIL_ID",
+   "class": "Column",
+   "sql": "RAIL_ID",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 7,
+      "start": 0,
+      "end": 6
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "RAIL_ID"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "SKEWNESS(defect.length) AS \"length_skewness\"",
+   "class": "Alias",
+   "sql": "SKEWNESS(defect.length) AS \"length_skewness\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Skewness",
+     "m": {
+      "line": 1,
+      "col": 8,
+      "start": 0,
+      "end": 7
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 22,
+      "start": 16,
+      "end": 21
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "length"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 9,
+      "end": 14
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 44,
+      "start": 27,
+      "end": 43
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "length_skewness"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "SKEWNESS(process_measure.value) AS \"skewness\"",
+   "class": "Alias",
+   "sql": "SKEWNESS(process_measure.value) AS \"skewness\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Skewness",
+     "m": {
+      "line": 1,
+      "col": 8,
+      "start": 0,
+      "end": 7
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 30,
+      "start": 25,
+      "end": 29
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 24,
+      "start": 9,
+      "end": 23
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 45,
+      "start": 35,
+      "end": 44
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "skewness"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "STDDEV_POP(process_measure.value) AS \"stddev_pop\"",
+   "class": "Alias",
+   "sql": "STDDEV_POP(process_measure.value) AS \"stddev_pop\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.StddevPop",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 32,
+      "start": 27,
+      "end": 31
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 11,
+      "end": 25
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 49,
+      "start": 37,
+      "end": 48
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "stddev_pop"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "SUM(CASE WHEN production.outcome IN ('DOWNGRADED', 'SCRAP') THEN production.weight END)",
+   "class": "Sum",
+   "sql": "SUM(CASE WHEN production.outcome IN ('DOWNGRADED', 'SCRAP') THEN production.weight END)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.aggregate.Sum",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.functions.Case"
+    },
+    {
+     "i": 1,
+     "k": "ifs",
+     "a": true,
+     "c": "sqlglot.expressions.functions.If"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.In"
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 32,
+      "start": 25,
+      "end": 31
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "outcome"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 4,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 24,
+      "start": 14,
+      "end": 23
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 8,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 3,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 49,
+      "start": 37,
+      "end": 48
+     }
+    },
+    {
+     "i": 11,
+     "k": "this",
+     "v": "DOWNGRADED"
+    },
+    {
+     "i": 11,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 3,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 58,
+      "start": 51,
+      "end": 57
+     }
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "v": "SCRAP"
+    },
+    {
+     "i": 14,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 2,
+     "k": "true",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 17,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 82,
+      "start": 76,
+      "end": 81
+     }
+    },
+    {
+     "i": 18,
+     "k": "this",
+     "v": "weight"
+    },
+    {
+     "i": 18,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 17,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 75,
+      "start": 65,
+      "end": 74
+     }
+    },
+    {
+     "i": 21,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 21,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "SUM(process_measure.value) AS \"sum\"",
+   "class": "Alias",
+   "sql": "SUM(process_measure.value) AS \"sum\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Sum",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 25,
+      "start": 20,
+      "end": 24
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 4,
+      "end": 18
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 35,
+      "start": 30,
+      "end": 34
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "sum"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "SUM(process_measure.value) AS \"total\"",
+   "class": "Alias",
+   "sql": "SUM(process_measure.value) AS \"total\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.Sum",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 25,
+      "start": 20,
+      "end": 24
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 4,
+      "end": 18
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 37,
+      "start": 30,
+      "end": 36
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "total"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "SUM(production.weight)",
+   "class": "Sum",
+   "sql": "SUM(production.weight)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.aggregate.Sum",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 21,
+      "start": 15,
+      "end": 20
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "weight"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 4,
+      "end": 13
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "SUSER_SNAME() AS \"who\"",
+   "class": "Alias",
+   "sql": "SUSER_SNAME() AS \"who\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Anonymous",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 0,
+      "end": 10
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "SUSER_SNAME"
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 22,
+      "start": 17,
+      "end": 21
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "who"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "TOTAL_INDICATIONS",
+   "class": "Column",
+   "sql": "TOTAL_INDICATIONS",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 17,
+      "start": 0,
+      "end": 16
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "TOTAL_INDICATIONS"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "VAR_POP(process_measure.value) AS \"variance_pop\"",
+   "class": "Alias",
+   "sql": "VARIANCE_POP(process_measure.value) AS \"variance_pop\"",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Alias"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.aggregate.VariancePop",
+     "m": {
+      "line": 1,
+      "col": 7,
+      "start": 0,
+      "end": 6
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 29,
+      "start": 24,
+      "end": 28
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 8,
+      "end": 22
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "alias",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 48,
+      "start": 34,
+      "end": 47
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "variance_pop"
+    },
+    {
+     "i": 9,
+     "k": "quoted",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "cast_date.calendar_date",
+   "class": "Column",
+   "sql": "cast_date.calendar_date",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 10,
+      "end": 22
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "calendar_date"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 0,
+      "end": 8
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "cast_date"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "cast_date.period",
+   "class": "Column",
+   "sql": "cast_date.period",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 16,
+      "start": 10,
+      "end": 15
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "period"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 0,
+      "end": 8
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "cast_date"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect.detected_at",
+   "class": "Column",
+   "sql": "defect.detected_at",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 18,
+      "start": 7,
+      "end": 17
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "detected_at"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect.id",
+   "class": "Column",
+   "sql": "defect.id",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 7,
+      "end": 8
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect.id = 1; DROP TABLE x",
+   "class": "Block",
+   "sql": "defect.id = 1; DROP TABLE x",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.query.Block"
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 7,
+      "end": 8
+     }
+    },
+    {
+     "i": 3,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 3,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 2,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 6,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 6,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 13,
+      "start": 12,
+      "end": 12
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "1"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.ddl.Drop"
+    },
+    {
+     "i": 12,
+     "k": "exists",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "tables",
+     "a": true,
+     "c": "sqlglot.expressions.query.Table"
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 27,
+      "start": 26,
+      "end": 26
+     }
+    },
+    {
+     "i": 15,
+     "k": "this",
+     "v": "x"
+    },
+    {
+     "i": 15,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "kind",
+     "v": "TABLE"
+    },
+    {
+     "i": 12,
+     "k": "temporary",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "materialized",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "cascade",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "restrict",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "constraints",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "purge",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "concurrently",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "sync",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "iceberg",
+     "v": false
+    },
+    {
+     "i": 12,
+     "k": "force",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect.id IN (SELECT 1 FROM sys.sql_logins)",
+   "class": "In",
+   "sql": "defect.id IN (SELECT 1 FROM sys.sql_logins)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.In"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 7,
+      "end": 8
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "id"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "query",
+     "c": "sqlglot.expressions.query.Subquery"
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.query.Select"
+    },
+    {
+     "i": 9,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 22,
+      "start": 21,
+      "end": 21
+     }
+    },
+    {
+     "i": 10,
+     "k": "this",
+     "v": "1"
+    },
+    {
+     "i": 10,
+     "k": "is_string",
+     "v": false
+    },
+    {
+     "i": 9,
+     "k": "from_",
+     "c": "sqlglot.expressions.query.From"
+    },
+    {
+     "i": 13,
+     "k": "this",
+     "c": "sqlglot.expressions.query.Table"
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 42,
+      "start": 32,
+      "end": 41
+     }
+    },
+    {
+     "i": 15,
+     "k": "this",
+     "v": "sql_logins"
+    },
+    {
+     "i": 15,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 14,
+     "k": "db",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 31,
+      "start": 28,
+      "end": 30
+     }
+    },
+    {
+     "i": 18,
+     "k": "this",
+     "v": "sys"
+    },
+    {
+     "i": 18,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect.length",
+   "class": "Column",
+   "sql": "defect.length",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 13,
+      "start": 7,
+      "end": 12
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "length"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect.rail_id",
+   "class": "Column",
+   "sql": "defect.rail_id",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 7,
+      "end": 13
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect.rail_id = 'R-1'",
+   "class": "EQ",
+   "sql": "defect.rail_id = 'R-1'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 7,
+      "end": 13
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 22,
+      "start": 17,
+      "end": 21
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "R-1"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "defect.rail_id = 'R-25-0000008'",
+   "class": "EQ",
+   "sql": "defect.rail_id = 'R-25-0000008'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 7,
+      "end": 13
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 31,
+      "start": 17,
+      "end": 30
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "R-25-0000008"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "defect.rail_id = 'R-26-0003428'",
+   "class": "EQ",
+   "sql": "defect.rail_id = 'R-26-0003428'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 7,
+      "end": 13
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 31,
+      "start": 17,
+      "end": 30
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "R-26-0003428"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "defect.rail_id IN ('INT_INCL', 'int_incl')",
+   "class": "In",
+   "sql": "defect.rail_id IN ('INT_INCL', 'int_incl')",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.In"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 14,
+      "start": 7,
+      "end": 13
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 6,
+      "start": 0,
+      "end": 5
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "defect"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 29,
+      "start": 19,
+      "end": 28
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "INT_INCL"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 41,
+      "start": 31,
+      "end": 40
+     }
+    },
+    {
+     "i": 11,
+     "k": "this",
+     "v": "int_incl"
+    },
+    {
+     "i": 11,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "defect_cont",
+   "class": "Column",
+   "sql": "defect_cont",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 0,
+      "end": 10
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "defect_cont"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect_count",
+   "class": "Column",
+   "sql": "defect_count",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 12,
+      "start": 0,
+      "end": 11
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "defect_count"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect_type.code",
+   "class": "Column",
+   "sql": "defect_type.code",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 16,
+      "start": 12,
+      "end": 15
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "code"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 0,
+      "end": 10
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "defect_type"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "defect_type.code = 'INT_INCL'",
+   "class": "EQ",
+   "sql": "defect_type.code = 'INT_INCL'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 16,
+      "start": 12,
+      "end": 15
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "code"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 0,
+      "end": 10
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "defect_type"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 29,
+      "start": 19,
+      "end": 28
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "INT_INCL"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "heat.code",
+   "class": "Column",
+   "sql": "heat.code",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 5,
+      "end": 8
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "code"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 4,
+      "start": 0,
+      "end": 3
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "heat"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "lost_tonnes",
+   "class": "Column",
+   "sql": "lost_tonnes",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 11,
+      "start": 0,
+      "end": 10
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "lost_tonnes"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "max > 1.5",
+   "class": "GT",
+   "sql": "max > 1.5",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.GT"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 3,
+      "start": 0,
+      "end": 2
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "max"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 9,
+      "start": 6,
+      "end": 8
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "1.5"
+    },
+    {
+     "i": 5,
+     "k": "is_string",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "measure.description",
+   "class": "Column",
+   "sql": "measure.description",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 19,
+      "start": 8,
+      "end": 18
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "description"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 7,
+      "start": 0,
+      "end": 6
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "measure"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "peak_value",
+   "class": "Column",
+   "sql": "peak_value",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "peak_value"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.asset",
+   "class": "Column",
+   "sql": "process_measure.asset",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 21,
+      "start": 16,
+      "end": 20
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "asset"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.asset = 'RM.RHF.ZONE1'",
+   "class": "EQ",
+   "sql": "process_measure.asset = 'RM.RHF.ZONE1'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 21,
+      "start": 16,
+      "end": 20
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "asset"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 38,
+      "start": 24,
+      "end": 37
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "RM.RHF.ZONE1"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "process_measure.asset = 'RM.STAND.F1'",
+   "class": "EQ",
+   "sql": "process_measure.asset = 'RM.STAND.F1'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 21,
+      "start": 16,
+      "end": 20
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "asset"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 37,
+      "start": 24,
+      "end": 36
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "RM.STAND.F1"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "process_measure.l2_code",
+   "class": "Column",
+   "sql": "process_measure.l2_code",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 16,
+      "end": 22
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.l2_code = 'L2-003424'",
+   "class": "EQ",
+   "sql": "process_measure.l2_code = 'L2-003424'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 16,
+      "end": 22
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 37,
+      "start": 26,
+      "end": 36
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "L2-003424"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "process_measure.l2_code = 'L2-OTHER'",
+   "class": "EQ",
+   "sql": "process_measure.l2_code = 'L2-OTHER'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 16,
+      "end": 22
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 36,
+      "start": 26,
+      "end": 35
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "L2-OTHER"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "process_measure.l2_code IN ('L2-003422', 'L2-003424', 'L2-003438')",
+   "class": "In",
+   "sql": "process_measure.l2_code IN ('L2-003422', 'L2-003424', 'L2-003438')",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.In"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 16,
+      "end": 22
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 39,
+      "start": 28,
+      "end": 38
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "L2-003422"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 52,
+      "start": 41,
+      "end": 51
+     }
+    },
+    {
+     "i": 11,
+     "k": "this",
+     "v": "L2-003424"
+    },
+    {
+     "i": 11,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 65,
+      "start": 54,
+      "end": 64
+     }
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "v": "L2-003438"
+    },
+    {
+     "i": 14,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "process_measure.l2_code IN ('L2-003424', 'L2-003422', 'L2-003438')",
+   "class": "In",
+   "sql": "process_measure.l2_code IN ('L2-003424', 'L2-003422', 'L2-003438')",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.In"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 16,
+      "end": 22
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 39,
+      "start": 28,
+      "end": 38
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "L2-003424"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 52,
+      "start": 41,
+      "end": 51
+     }
+    },
+    {
+     "i": 11,
+     "k": "this",
+     "v": "L2-003422"
+    },
+    {
+     "i": 11,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 65,
+      "start": 54,
+      "end": 64
+     }
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "v": "L2-003438"
+    },
+    {
+     "i": 14,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "process_measure.l2_code IN ('L2-1', 'L2-2', 'L2-3')",
+   "class": "In",
+   "sql": "process_measure.l2_code IN ('L2-1', 'L2-2', 'L2-3')",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.In"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 16,
+      "end": 22
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 34,
+      "start": 28,
+      "end": 33
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "L2-1"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 42,
+      "start": 36,
+      "end": 41
+     }
+    },
+    {
+     "i": 11,
+     "k": "this",
+     "v": "L2-2"
+    },
+    {
+     "i": 11,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 50,
+      "start": 44,
+      "end": 49
+     }
+    },
+    {
+     "i": 14,
+     "k": "this",
+     "v": "L2-3"
+    },
+    {
+     "i": 14,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "process_measure.measure",
+   "class": "Column",
+   "sql": "process_measure.measure",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 16,
+      "end": 22
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "measure"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.measure = 'Temperature'",
+   "class": "EQ",
+   "sql": "process_measure.measure = 'Temperature'",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.EQ"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 23,
+      "start": 16,
+      "end": 22
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "measure"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 39,
+      "start": 26,
+      "end": 38
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "Temperature"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at",
+   "class": "Column",
+   "sql": "process_measure.sampled_at",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at < TIMESTAMP '2026-03-01 00:00:00+00:00'",
+   "class": "LT",
+   "sql": "process_measure.sampled_at < CAST('2026-03-01 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.LT"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 66,
+      "start": 39,
+      "end": 65
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-01 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at < TIMESTAMP '2026-03-05 00:00:00+00:00'",
+   "class": "LT",
+   "sql": "process_measure.sampled_at < CAST('2026-03-05 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.LT"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 66,
+      "start": 39,
+      "end": 65
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-05 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at < TIMESTAMP '2026-03-11 00:00:00+00:00'",
+   "class": "LT",
+   "sql": "process_measure.sampled_at < CAST('2026-03-11 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.LT"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 66,
+      "start": 39,
+      "end": 65
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-11 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at < TIMESTAMP '2026-03-12 00:00:00+00:00'",
+   "class": "LT",
+   "sql": "process_measure.sampled_at < CAST('2026-03-12 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.LT"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 66,
+      "start": 39,
+      "end": 65
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-12 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at < TIMESTAMP '2026-03-15 00:00:00+00:00'",
+   "class": "LT",
+   "sql": "process_measure.sampled_at < CAST('2026-03-15 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.LT"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 66,
+      "start": 39,
+      "end": 65
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-15 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at < TIMESTAMP '2026-03-31 00:00:00+00:00'",
+   "class": "LT",
+   "sql": "process_measure.sampled_at < CAST('2026-03-31 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.LT"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 66,
+      "start": 39,
+      "end": 65
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-31 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at <= TIMESTAMP '2026-01-02 00:00:00+00:00'",
+   "class": "LTE",
+   "sql": "process_measure.sampled_at <= CAST('2026-01-02 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.LTE"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 67,
+      "start": 40,
+      "end": 66
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-01-02 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at <= TIMESTAMP '2026-03-11 00:00:00+00:00'",
+   "class": "LTE",
+   "sql": "process_measure.sampled_at <= CAST('2026-03-11 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.LTE"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 67,
+      "start": 40,
+      "end": 66
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-11 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at >= TIMESTAMP '2025-03-01 00:00:00+00:00'",
+   "class": "GTE",
+   "sql": "process_measure.sampled_at >= CAST('2025-03-01 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.GTE"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 67,
+      "start": 40,
+      "end": 66
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2025-03-01 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at >= TIMESTAMP '2026-01-01 00:00:00+00:00'",
+   "class": "GTE",
+   "sql": "process_measure.sampled_at >= CAST('2026-01-01 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.GTE"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 67,
+      "start": 40,
+      "end": 66
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-01-01 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at >= TIMESTAMP '2026-03-01 00:00:00+00:00'",
+   "class": "GTE",
+   "sql": "process_measure.sampled_at >= CAST('2026-03-01 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.GTE"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 67,
+      "start": 40,
+      "end": 66
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-01 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.sampled_at >= TIMESTAMP '2026-03-10 00:00:00+00:00'",
+   "class": "GTE",
+   "sql": "process_measure.sampled_at >= CAST('2026-03-10 00:00:00+00:00' AS TIMESTAMP)",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.GTE"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 26,
+      "start": 16,
+      "end": 25
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "sampled_at"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expression",
+     "c": "sqlglot.expressions.functions.Cast",
+     "t": [
+      {
+       "c": "sqlglot.expressions.datatypes.DataType"
+      },
+      {
+       "i": 0,
+       "k": "this",
+       "c": "DataType.Type",
+       "v": "TIMESTAMP"
+      },
+      {
+       "i": 0,
+       "k": "nested",
+       "v": false
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 67,
+      "start": 40,
+      "end": 66
+     }
+    },
+    {
+     "i": 9,
+     "k": "this",
+     "v": "2026-03-10 00:00:00+00:00"
+    },
+    {
+     "i": 9,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 8,
+     "k": "to",
+     "c": "sqlglot.expressions.datatypes.DataType"
+    },
+    {
+     "i": 12,
+     "k": "this",
+     "c": "DataType.Type",
+     "v": "TIMESTAMP"
+    },
+    {
+     "i": 12,
+     "k": "nested",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "process_measure.value",
+   "class": "Column",
+   "sql": "process_measure.value",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 21,
+      "start": 16,
+      "end": 20
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "value"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "process_measure"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "produced_tonnes",
+   "class": "Column",
+   "sql": "produced_tonnes",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 0,
+      "end": 14
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "produced_tonnes"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "product.grade",
+   "class": "Column",
+   "sql": "product.grade",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 13,
+      "start": 8,
+      "end": 12
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "grade"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 7,
+      "start": 0,
+      "end": 6
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "product"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "product.rail_id",
+   "class": "Column",
+   "sql": "product.rail_id",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 8,
+      "end": 14
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 7,
+      "start": 0,
+      "end": 6
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "product"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "product.rail_id IN ('R-25-0000008', 'R-25-0000009')",
+   "class": "In",
+   "sql": "product.rail_id IN ('R-25-0000008', 'R-25-0000009')",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.In"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 15,
+      "start": 8,
+      "end": 14
+     }
+    },
+    {
+     "i": 2,
+     "k": "this",
+     "v": "rail_id"
+    },
+    {
+     "i": 2,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 1,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 7,
+      "start": 0,
+      "end": 6
+     }
+    },
+    {
+     "i": 5,
+     "k": "this",
+     "v": "product"
+    },
+    {
+     "i": 5,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 34,
+      "start": 20,
+      "end": 33
+     }
+    },
+    {
+     "i": 8,
+     "k": "this",
+     "v": "R-25-0000008"
+    },
+    {
+     "i": 8,
+     "k": "is_string",
+     "v": true
+    },
+    {
+     "i": 0,
+     "k": "expressions",
+     "a": true,
+     "c": "sqlglot.expressions.core.Literal",
+     "m": {
+      "line": 1,
+      "col": 50,
+      "start": 36,
+      "end": 49
+     }
+    },
+    {
+     "i": 11,
+     "k": "this",
+     "v": "R-25-0000009"
+    },
+    {
+     "i": 11,
+     "k": "is_string",
+     "v": true
+    }
+   ]
+  },
+  {
+   "text": "production.l2_code",
+   "class": "Column",
+   "sql": "production.l2_code",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 18,
+      "start": 11,
+      "end": 17
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "l2_code"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "production.weight",
+   "class": "Column",
+   "sql": "production.weight",
+   "ast": [
+    {
+     "c": "sqlglot.expressions.core.Column"
+    },
+    {
+     "i": 0,
+     "k": "this",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 17,
+      "start": 11,
+      "end": 16
+     }
+    },
+    {
+     "i": 1,
+     "k": "this",
+     "v": "weight"
+    },
+    {
+     "i": 1,
+     "k": "quoted",
+     "v": false
+    },
+    {
+     "i": 0,
+     "k": "table",
+     "c": "sqlglot.expressions.core.Identifier",
+     "m": {
+      "line": 1,
+      "col": 10,
+      "start": 0,
+      "end": 9
+     }
+    },
+    {
+     "i": 4,
+     "k": "this",
+     "v": "production"
+    },
+    {
+     "i": 4,
+     "k": "quoted",
+     "v": false
+    }
+   ]
+  },
+  {
+   "text": "sql_variant) IS NOT NULL OR 1=1; --",
+   "error": "ParseError"
+  },
+  {
+   "text": "sql_variant) IS NOT NULL OR 1=1; SELECT name FROM sys.tables; --",
+   "error": "ParseError"
+  }
+ ]
+}

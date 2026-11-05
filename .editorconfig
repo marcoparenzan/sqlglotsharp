@@ -1,0 +1,11 @@
+root = true
+
+[*.cs]
+charset = utf-8
+indent_style = space
+indent_size = 4
+dotnet_diagnostic.IDE1006.severity = none
+dotnet_diagnostic.CA1707.severity = none
+dotnet_diagnostic.CA1708.severity = none
+dotnet_diagnostic.CA1716.severity = none
+dotnet_diagnostic.CS8981.severity = none

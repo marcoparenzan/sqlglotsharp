@@ -1,0 +1,25 @@
+{
+  "classes": 294,
+  "returns": 164,
+  "annotators": 130,
+  "backend_methods": [
+    "_annotate_binary",
+    "_annotate_bracket",
+    "_annotate_by_args",
+    "_annotate_by_array_element",
+    "_annotate_div",
+    "_annotate_dot",
+    "_annotate_explode",
+    "_annotate_extract",
+    "_annotate_literal",
+    "_annotate_map",
+    "_annotate_struct",
+    "_annotate_subquery",
+    "_annotate_timeunit",
+    "_annotate_to_map",
+    "_annotate_unary",
+    "_annotate_unnest",
+    "_annotate_within_group",
+    "_set_type"
+  ]
+}

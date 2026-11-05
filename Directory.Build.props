@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>14.0</LangVersion>
+    <ArtifactsRoot>$(MSBuildThisFileDirectory)artifacts</ArtifactsRoot>
+    <BaseOutputPath>$(ArtifactsRoot)\$(MSBuildProjectName)\bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(ArtifactsRoot)\$(MSBuildProjectName)\obj\</BaseIntermediateOutputPath>
+    <NoWarn>$(NoWarn);CS8981</NoWarn>
+  </PropertyGroup>
+</Project>

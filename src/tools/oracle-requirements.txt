@@ -1,0 +1,7 @@
+# Oracle test dependencies; install in an external virtual environment.
+pytz==2025.2
+tzdata==2025.2
+duckdb==2.0.0
+numpy==2.2.6
+pandas==2.3.3
+setuptools-scm==9.2.2

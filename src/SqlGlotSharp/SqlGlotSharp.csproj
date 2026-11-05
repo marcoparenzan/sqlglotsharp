@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- <upstream SQLGlot x.y.z>-net10-preview.<n>: new content = new n (AGENTS.md rule 8) -->
+    <Version>30.27.0-net10-preview.1</Version>
+    <IsPackable>true</IsPackable>
+    <PackageId>SqlGlotSharp</PackageId>
+    <Authors>Marco Parenzan</Authors>
+    <Description>Unofficial C# port of SQLGlot (Toby Mao and the SQLGlot contributors): SQL parser, generator and transpiler for the base, PostgreSQL, T-SQL and Fabric dialects. No runtime dependencies.</Description>
+    <Copyright>Copyright (c) 2026 Toby Mao; Copyright (c) 2026 Marco Parenzan</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>sql;parser;transpiler;sqlglot;postgresql;tsql;fabric</PackageTags>
+    <RepositoryUrl>https://github.com/marcoparenzan/sqlglotsharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageOutputPath>D:\Dev\NuGetLocalFeed</PackageOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>

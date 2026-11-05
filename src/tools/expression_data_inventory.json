@@ -1,0 +1,5909 @@
+{
+  "counts": {
+    "enum_alias": 2,
+    "existing_trait_data": 2,
+    "generated": 24,
+    "metadata": 954,
+    "structural": 1
+  },
+  "attributes": [
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::AIAgg.arg_types",
+      "name": "arg_types",
+      "class": "AIAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::AIAgg._sql_names",
+      "name": "_sql_names",
+      "class": "AIAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::AISummarizeAgg._sql_names",
+      "name": "_sql_names",
+      "class": "AISummarizeAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproximateSimilarity._sql_names",
+      "name": "_sql_names",
+      "class": "ApproximateSimilarity",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproxPercentileEstimate.arg_types",
+      "name": "arg_types",
+      "class": "ApproxPercentileEstimate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproxQuantiles.arg_types",
+      "name": "arg_types",
+      "class": "ApproxQuantiles",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproxTopK.arg_types",
+      "name": "arg_types",
+      "class": "ApproxTopK",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproxTopKAccumulate.arg_types",
+      "name": "arg_types",
+      "class": "ApproxTopKAccumulate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproxTopKCombine.arg_types",
+      "name": "arg_types",
+      "class": "ApproxTopKCombine",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproxTopKEstimate.arg_types",
+      "name": "arg_types",
+      "class": "ApproxTopKEstimate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproxTopSum.arg_types",
+      "name": "arg_types",
+      "class": "ApproxTopSum",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ArgMax.arg_types",
+      "name": "arg_types",
+      "class": "ArgMax",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ArgMax._sql_names",
+      "name": "_sql_names",
+      "class": "ArgMax",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ArgMin.arg_types",
+      "name": "arg_types",
+      "class": "ArgMin",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ArgMin._sql_names",
+      "name": "_sql_names",
+      "class": "ArgMin",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ArrayAgg.arg_types",
+      "name": "arg_types",
+      "class": "ArrayAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Corr.arg_types",
+      "name": "arg_types",
+      "class": "Corr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Count.arg_types",
+      "name": "arg_types",
+      "class": "Count",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Count.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Count",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::CountIf._sql_names",
+      "name": "_sql_names",
+      "class": "CountIf",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::CountIf.arg_types",
+      "name": "arg_types",
+      "class": "CountIf",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::CovarPop.arg_types",
+      "name": "arg_types",
+      "class": "CovarPop",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::CovarSamp.arg_types",
+      "name": "arg_types",
+      "class": "CovarSamp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::CumeDist.arg_types",
+      "name": "arg_types",
+      "class": "CumeDist",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::CumeDist.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "CumeDist",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::DenseRank.arg_types",
+      "name": "arg_types",
+      "class": "DenseRank",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::DenseRank.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "DenseRank",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::First.arg_types",
+      "name": "arg_types",
+      "class": "First",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::GroupConcat.arg_types",
+      "name": "arg_types",
+      "class": "GroupConcat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Grouping.arg_types",
+      "name": "arg_types",
+      "class": "Grouping",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Grouping.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Grouping",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::GroupingId.arg_types",
+      "name": "arg_types",
+      "class": "GroupingId",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::GroupingId.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "GroupingId",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Lag.arg_types",
+      "name": "arg_types",
+      "class": "Lag",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Last.arg_types",
+      "name": "arg_types",
+      "class": "Last",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Lead.arg_types",
+      "name": "arg_types",
+      "class": "Lead",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::LogicalAnd._sql_names",
+      "name": "_sql_names",
+      "class": "LogicalAnd",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::LogicalOr._sql_names",
+      "name": "_sql_names",
+      "class": "LogicalOr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Max.arg_types",
+      "name": "arg_types",
+      "class": "Max",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Max.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Max",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Min.arg_types",
+      "name": "arg_types",
+      "class": "Min",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Min.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Min",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Minhash.arg_types",
+      "name": "arg_types",
+      "class": "Minhash",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Minhash.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Minhash",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Mode.arg_types",
+      "name": "arg_types",
+      "class": "Mode",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Ntile.arg_types",
+      "name": "arg_types",
+      "class": "Ntile",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::NthValue.arg_types",
+      "name": "arg_types",
+      "class": "NthValue",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ObjectAgg.arg_types",
+      "name": "arg_types",
+      "class": "ObjectAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::PercentileCont.arg_types",
+      "name": "arg_types",
+      "class": "PercentileCont",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::PercentileDisc.arg_types",
+      "name": "arg_types",
+      "class": "PercentileDisc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::PercentRank.arg_types",
+      "name": "arg_types",
+      "class": "PercentRank",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::PercentRank.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "PercentRank",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Quantile.arg_types",
+      "name": "arg_types",
+      "class": "Quantile",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::ApproxQuantile.arg_types",
+      "name": "arg_types",
+      "class": "ApproxQuantile",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Rank.arg_types",
+      "name": "arg_types",
+      "class": "Rank",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Rank.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Rank",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrAvgx.arg_types",
+      "name": "arg_types",
+      "class": "RegrAvgx",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrAvgy.arg_types",
+      "name": "arg_types",
+      "class": "RegrAvgy",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrCount.arg_types",
+      "name": "arg_types",
+      "class": "RegrCount",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrIntercept.arg_types",
+      "name": "arg_types",
+      "class": "RegrIntercept",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrR2.arg_types",
+      "name": "arg_types",
+      "class": "RegrR2",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrSlope.arg_types",
+      "name": "arg_types",
+      "class": "RegrSlope",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrSxx.arg_types",
+      "name": "arg_types",
+      "class": "RegrSxx",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrSxy.arg_types",
+      "name": "arg_types",
+      "class": "RegrSxy",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrSyy.arg_types",
+      "name": "arg_types",
+      "class": "RegrSyy",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrValx.arg_types",
+      "name": "arg_types",
+      "class": "RegrValx",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RegrValy.arg_types",
+      "name": "arg_types",
+      "class": "RegrValy",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::RowNumber.arg_types",
+      "name": "arg_types",
+      "class": "RowNumber",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Stddev._sql_names",
+      "name": "_sql_names",
+      "class": "Stddev",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::Variance._sql_names",
+      "name": "_sql_names",
+      "class": "Variance",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/aggregate.py::VariancePop._sql_names",
+      "name": "_sql_names",
+      "class": "VariancePop",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Array.arg_types",
+      "name": "arg_types",
+      "class": "Array",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Array.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Array",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayConstructCompact.arg_types",
+      "name": "arg_types",
+      "class": "ArrayConstructCompact",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayConstructCompact.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "ArrayConstructCompact",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::List.arg_types",
+      "name": "arg_types",
+      "class": "List",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::List.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "List",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayAppend.arg_types",
+      "name": "arg_types",
+      "class": "ArrayAppend",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayConcat._sql_names",
+      "name": "_sql_names",
+      "class": "ArrayConcat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayConcat.arg_types",
+      "name": "arg_types",
+      "class": "ArrayConcat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayConcat.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "ArrayConcat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayFilter.arg_types",
+      "name": "arg_types",
+      "class": "ArrayFilter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayFilter._sql_names",
+      "name": "_sql_names",
+      "class": "ArrayFilter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayInsert.arg_types",
+      "name": "arg_types",
+      "class": "ArrayInsert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayPrepend.arg_types",
+      "name": "arg_types",
+      "class": "ArrayPrepend",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayRemove.arg_types",
+      "name": "arg_types",
+      "class": "ArrayRemove",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayRemoveAt.arg_types",
+      "name": "arg_types",
+      "class": "ArrayRemoveAt",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArraySlice.arg_types",
+      "name": "arg_types",
+      "class": "ArraySlice",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArraySort.arg_types",
+      "name": "arg_types",
+      "class": "ArraySort",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayAll.arg_types",
+      "name": "arg_types",
+      "class": "ArrayAll",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayAny.arg_types",
+      "name": "arg_types",
+      "class": "ArrayAny",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayContains.arg_types",
+      "name": "arg_types",
+      "class": "ArrayContains",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayContains._sql_names",
+      "name": "_sql_names",
+      "class": "ArrayContains",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayContainsAll._sql_names",
+      "name": "_sql_names",
+      "class": "ArrayContainsAll",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayExcept.arg_types",
+      "name": "arg_types",
+      "class": "ArrayExcept",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayIntersect.arg_types",
+      "name": "arg_types",
+      "class": "ArrayIntersect",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayIntersect.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "ArrayIntersect",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayIntersect._sql_names",
+      "name": "_sql_names",
+      "class": "ArrayIntersect",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayOverlaps.arg_types",
+      "name": "arg_types",
+      "class": "ArrayOverlaps",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayPosition.arg_types",
+      "name": "arg_types",
+      "class": "ArrayPosition",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayDistinct.arg_types",
+      "name": "arg_types",
+      "class": "ArrayDistinct",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayFirst.arg_types",
+      "name": "arg_types",
+      "class": "ArrayFirst",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArraySize.arg_types",
+      "name": "arg_types",
+      "class": "ArraySize",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArraySize._sql_names",
+      "name": "_sql_names",
+      "class": "ArraySize",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArraySum.arg_types",
+      "name": "arg_types",
+      "class": "ArraySum",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArraysZip.arg_types",
+      "name": "arg_types",
+      "class": "ArraysZip",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArraysZip.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "ArraysZip",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayToString.arg_types",
+      "name": "arg_types",
+      "class": "ArrayToString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::ArrayToString._sql_names",
+      "name": "_sql_names",
+      "class": "ArrayToString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::StringToArray.arg_types",
+      "name": "arg_types",
+      "class": "StringToArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::StringToArray._sql_names",
+      "name": "_sql_names",
+      "class": "StringToArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::StrtokToArray.arg_types",
+      "name": "arg_types",
+      "class": "StrtokToArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Apply.arg_types",
+      "name": "arg_types",
+      "class": "Apply",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Reduce.arg_types",
+      "name": "arg_types",
+      "class": "Reduce",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Transform.arg_types",
+      "name": "arg_types",
+      "class": "Transform",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::GenerateSeries.arg_types",
+      "name": "arg_types",
+      "class": "GenerateSeries",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Generator.arg_types",
+      "name": "arg_types",
+      "class": "Generator",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Explode.arg_types",
+      "name": "arg_types",
+      "class": "Explode",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Explode.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Explode",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::SplitToTable.arg_types",
+      "name": "arg_types",
+      "class": "SplitToTable",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::StrtokSplitToTable.arg_types",
+      "name": "arg_types",
+      "class": "StrtokSplitToTable",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Stack.arg_types",
+      "name": "arg_types",
+      "class": "Stack",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Stack.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Stack",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::_ExplodeOuter._sql_names",
+      "name": "_sql_names",
+      "class": "_ExplodeOuter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Unnest.arg_types",
+      "name": "arg_types",
+      "class": "Unnest",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Map.arg_types",
+      "name": "arg_types",
+      "class": "Map",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::MapCat.arg_types",
+      "name": "arg_types",
+      "class": "MapCat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::MapContainsKey.arg_types",
+      "name": "arg_types",
+      "class": "MapContainsKey",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::MapDelete.arg_types",
+      "name": "arg_types",
+      "class": "MapDelete",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::MapDelete.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "MapDelete",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::MapInsert.arg_types",
+      "name": "arg_types",
+      "class": "MapInsert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::MapPick.arg_types",
+      "name": "arg_types",
+      "class": "MapPick",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::MapPick.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "MapPick",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::VarMap.arg_types",
+      "name": "arg_types",
+      "class": "VarMap",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::VarMap.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "VarMap",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::VarMap.var_len_arg_key",
+      "name": "var_len_arg_key",
+      "class": "VarMap",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Struct.arg_types",
+      "name": "arg_types",
+      "class": "Struct",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::Struct.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Struct",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::StructExtract.arg_types",
+      "name": "arg_types",
+      "class": "StructExtract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::StDistance.arg_types",
+      "name": "arg_types",
+      "class": "StDistance",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::StPoint.arg_types",
+      "name": "arg_types",
+      "class": "StPoint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/array.py::StPoint._sql_names",
+      "name": "_sql_names",
+      "class": "StPoint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::IndexConstraintOption.arg_types",
+      "name": "arg_types",
+      "class": "IndexConstraintOption",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::Reference.arg_types",
+      "name": "arg_types",
+      "class": "Reference",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::ColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "ColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::InvisibleColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "InvisibleColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::ZeroFillColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "ZeroFillColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::BinaryColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "BinaryColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::PeriodForSystemTimeConstraint.arg_types",
+      "name": "arg_types",
+      "class": "PeriodForSystemTimeConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::CaseSpecificColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "CaseSpecificColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::CheckColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "CheckColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::CompressColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "CompressColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::EphemeralColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "EphemeralColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::WithOperator.arg_types",
+      "name": "arg_types",
+      "class": "WithOperator",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::GeneratedAsIdentityColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "GeneratedAsIdentityColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::GeneratedAsRowColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "GeneratedAsRowColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::IndexColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "IndexColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::NotForReplicationColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "NotForReplicationColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::MaskingPolicyColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "MaskingPolicyColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::NotNullColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "NotNullColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::PrimaryKeyColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "PrimaryKeyColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::UniqueColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "UniqueColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::UppercaseColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "UppercaseColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::WatermarkColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "WatermarkColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::ComputedColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "ComputedColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::InOutColumnConstraint.arg_types",
+      "name": "arg_types",
+      "class": "InOutColumnConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::Constraint.arg_types",
+      "name": "arg_types",
+      "class": "Constraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::ForeignKey.arg_types",
+      "name": "arg_types",
+      "class": "ForeignKey",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::ColumnPrefix.arg_types",
+      "name": "arg_types",
+      "class": "ColumnPrefix",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::PrimaryKey.arg_types",
+      "name": "arg_types",
+      "class": "PrimaryKey",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::IndexParameters.arg_types",
+      "name": "arg_types",
+      "class": "IndexParameters",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/constraints.py::AddConstraint.arg_types",
+      "name": "arg_types",
+      "class": "AddConstraint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.key",
+      "name": "key",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.arg_types",
+      "name": "arg_types",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.required_args",
+      "name": "required_args",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.var_len_arg_key",
+      "name": "var_len_arg_key",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.is_subquery",
+      "name": "is_subquery",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.is_cast",
+      "name": "is_cast",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.is_data_type",
+      "name": "is_data_type",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expr.is_primitive",
+      "name": "is_primitive",
+      "class": "Expr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Expression.__slots__",
+      "name": "__slots__",
+      "class": "Expression",
+      "status": "structural"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Cache.arg_types",
+      "name": "arg_types",
+      "class": "Cache",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Uncache.arg_types",
+      "name": "arg_types",
+      "class": "Uncache",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Refresh.arg_types",
+      "name": "arg_types",
+      "class": "Refresh",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::LockingStatement.arg_types",
+      "name": "arg_types",
+      "class": "LockingStatement",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Binary.arg_types",
+      "name": "arg_types",
+      "class": "Binary",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Func.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Func",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Func.var_len_arg_key",
+      "name": "var_len_arg_key",
+      "class": "Func",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Func._sql_names",
+      "name": "_sql_names",
+      "class": "Func",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Column.arg_types",
+      "name": "arg_types",
+      "class": "Column",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Literal.arg_types",
+      "name": "arg_types",
+      "class": "Literal",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Literal._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "Literal",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Literal.is_primitive",
+      "name": "is_primitive",
+      "class": "Literal",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Var.is_primitive",
+      "name": "is_primitive",
+      "class": "Var",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::WithinGroup.arg_types",
+      "name": "arg_types",
+      "class": "WithinGroup",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Hint.arg_types",
+      "name": "arg_types",
+      "class": "Hint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::JoinHint.arg_types",
+      "name": "arg_types",
+      "class": "JoinHint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Identifier.arg_types",
+      "name": "arg_types",
+      "class": "Identifier",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Identifier.is_primitive",
+      "name": "is_primitive",
+      "class": "Identifier",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Identifier._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "Identifier",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::DynamicIdentifier.arg_types",
+      "name": "arg_types",
+      "class": "DynamicIdentifier",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Opclass.arg_types",
+      "name": "arg_types",
+      "class": "Opclass",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Star.arg_types",
+      "name": "arg_types",
+      "class": "Star",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Parameter.arg_types",
+      "name": "arg_types",
+      "class": "Parameter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::SessionParameter.arg_types",
+      "name": "arg_types",
+      "class": "SessionParameter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Placeholder.arg_types",
+      "name": "arg_types",
+      "class": "Placeholder",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Placeholder._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "Placeholder",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Null.arg_types",
+      "name": "arg_types",
+      "class": "Null",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Boolean.is_primitive",
+      "name": "is_primitive",
+      "class": "Boolean",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Alias.arg_types",
+      "name": "arg_types",
+      "class": "Alias",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::PivotAny.arg_types",
+      "name": "arg_types",
+      "class": "PivotAny",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Aliases.arg_types",
+      "name": "arg_types",
+      "class": "Aliases",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Bracket.arg_types",
+      "name": "arg_types",
+      "class": "Bracket",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::ForIn.arg_types",
+      "name": "arg_types",
+      "class": "ForIn",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::HavingMax.arg_types",
+      "name": "arg_types",
+      "class": "HavingMax",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::ParameterizedAgg.arg_types",
+      "name": "arg_types",
+      "class": "ParameterizedAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::ParameterizedAgg._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "ParameterizedAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Anonymous.arg_types",
+      "name": "arg_types",
+      "class": "Anonymous",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Anonymous.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Anonymous",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::AnonymousAggFunc.arg_types",
+      "name": "arg_types",
+      "class": "AnonymousAggFunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::AnonymousAggFunc.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "AnonymousAggFunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::AnonymousAggFunc._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "AnonymousAggFunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::CombinedAggFunc.arg_types",
+      "name": "arg_types",
+      "class": "CombinedAggFunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::CombinedParameterizedAgg.arg_types",
+      "name": "arg_types",
+      "class": "CombinedParameterizedAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::HashAgg.arg_types",
+      "name": "arg_types",
+      "class": "HashAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::HashAgg.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "HashAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Hll.arg_types",
+      "name": "arg_types",
+      "class": "Hll",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Hll.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Hll",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::ApproxDistinct.arg_types",
+      "name": "arg_types",
+      "class": "ApproxDistinct",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::ApproxDistinct._sql_names",
+      "name": "_sql_names",
+      "class": "ApproxDistinct",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Slice.arg_types",
+      "name": "arg_types",
+      "class": "Slice",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::TimeUnit.UNABBREVIATED_UNIT_NAME",
+      "name": "UNABBREVIATED_UNIT_NAME",
+      "class": "TimeUnit",
+      "status": "existing_trait_data"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::TimeUnit.VAR_LIKE",
+      "name": "VAR_LIKE",
+      "class": "TimeUnit",
+      "status": "existing_trait_data"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::_TimeUnit.arg_types",
+      "name": "arg_types",
+      "class": "_TimeUnit",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Filter.arg_types",
+      "name": "arg_types",
+      "class": "Filter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Per.arg_types",
+      "name": "arg_types",
+      "class": "Per",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Ordered.arg_types",
+      "name": "arg_types",
+      "class": "Ordered",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::BitwiseAnd.arg_types",
+      "name": "arg_types",
+      "class": "BitwiseAnd",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::BitwiseLeftShift.arg_types",
+      "name": "arg_types",
+      "class": "BitwiseLeftShift",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::BitwiseOr.arg_types",
+      "name": "arg_types",
+      "class": "BitwiseOr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::BitwiseRightShift.arg_types",
+      "name": "arg_types",
+      "class": "BitwiseRightShift",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::BitwiseXor.arg_types",
+      "name": "arg_types",
+      "class": "BitwiseXor",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Div.arg_types",
+      "name": "arg_types",
+      "class": "Div",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::DPipe.arg_types",
+      "name": "arg_types",
+      "class": "DPipe",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::ILike.arg_types",
+      "name": "arg_types",
+      "class": "ILike",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Is.arg_types",
+      "name": "arg_types",
+      "class": "Is",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Like.arg_types",
+      "name": "arg_types",
+      "class": "Like",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Match.arg_types",
+      "name": "arg_types",
+      "class": "Match",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Operator.arg_types",
+      "name": "arg_types",
+      "class": "Operator",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::AtIndex.arg_types",
+      "name": "arg_types",
+      "class": "AtIndex",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::AtTimeZone.arg_types",
+      "name": "arg_types",
+      "class": "AtTimeZone",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::FromTimeZone.arg_types",
+      "name": "arg_types",
+      "class": "FromTimeZone",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::FormatPhrase.arg_types",
+      "name": "arg_types",
+      "class": "FormatPhrase",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Between.arg_types",
+      "name": "arg_types",
+      "class": "Between",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Distinct.arg_types",
+      "name": "arg_types",
+      "class": "Distinct",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::In.arg_types",
+      "name": "arg_types",
+      "class": "In",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Xor.arg_types",
+      "name": "arg_types",
+      "class": "Xor",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::Pow._sql_names",
+      "name": "_sql_names",
+      "class": "Pow",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/core.py::RegexpLike.arg_types",
+      "name": "arg_types",
+      "class": "RegexpLike",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataTypeParam.arg_types",
+      "name": "arg_types",
+      "class": "DataTypeParam",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.arg_types",
+      "name": "arg_types",
+      "class": "DataType",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.is_data_type",
+      "name": "is_data_type",
+      "class": "DataType",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.Type",
+      "name": "Type",
+      "class": "DataType",
+      "status": "enum_alias"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.STRUCT_TYPES",
+      "name": "STRUCT_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.ARRAY_TYPES",
+      "name": "ARRAY_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.NESTED_TYPES",
+      "name": "NESTED_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.TEXT_TYPES",
+      "name": "TEXT_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.BINARY_TYPES",
+      "name": "BINARY_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.SIGNED_INTEGER_TYPES",
+      "name": "SIGNED_INTEGER_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.UNSIGNED_INTEGER_TYPES",
+      "name": "UNSIGNED_INTEGER_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.INTEGER_TYPES",
+      "name": "INTEGER_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.FLOAT_TYPES",
+      "name": "FLOAT_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.REAL_TYPES",
+      "name": "REAL_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.NUMERIC_TYPES",
+      "name": "NUMERIC_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::DataType.TEMPORAL_TYPES",
+      "name": "TEMPORAL_TYPES",
+      "class": "DataType",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::PseudoType.arg_types",
+      "name": "arg_types",
+      "class": "PseudoType",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::ObjectIdentifier.arg_types",
+      "name": "arg_types",
+      "class": "ObjectIdentifier",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::IntervalSpan.arg_types",
+      "name": "arg_types",
+      "class": "IntervalSpan",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/datatypes.py::Interval.arg_types",
+      "name": "arg_types",
+      "class": "Interval",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Create.arg_types",
+      "name": "arg_types",
+      "class": "Create",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::SequenceProperties.arg_types",
+      "name": "arg_types",
+      "class": "SequenceProperties",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::TriggerProperties.arg_types",
+      "name": "arg_types",
+      "class": "TriggerProperties",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::TriggerEvent.arg_types",
+      "name": "arg_types",
+      "class": "TriggerEvent",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::TriggerReferencing.arg_types",
+      "name": "arg_types",
+      "class": "TriggerReferencing",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::TruncateTable.arg_types",
+      "name": "arg_types",
+      "class": "TruncateTable",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Clone.arg_types",
+      "name": "arg_types",
+      "class": "Clone",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Describe.arg_types",
+      "name": "arg_types",
+      "class": "Describe",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Disconnect.arg_types",
+      "name": "arg_types",
+      "class": "Disconnect",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Attach.arg_types",
+      "name": "arg_types",
+      "class": "Attach",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Detach.arg_types",
+      "name": "arg_types",
+      "class": "Detach",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Install.arg_types",
+      "name": "arg_types",
+      "class": "Install",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Summarize.arg_types",
+      "name": "arg_types",
+      "class": "Summarize",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Kill.arg_types",
+      "name": "arg_types",
+      "class": "Kill",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Declare.arg_types",
+      "name": "arg_types",
+      "class": "Declare",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::DeclareItem.arg_types",
+      "name": "arg_types",
+      "class": "DeclareItem",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Set.arg_types",
+      "name": "arg_types",
+      "class": "Set",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Heredoc.arg_types",
+      "name": "arg_types",
+      "class": "Heredoc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Heredoc._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "Heredoc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::SetItem.arg_types",
+      "name": "arg_types",
+      "class": "SetItem",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Show.arg_types",
+      "name": "arg_types",
+      "class": "Show",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::UserDefinedFunction.arg_types",
+      "name": "arg_types",
+      "class": "UserDefinedFunction",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::MacroOverloads.arg_types",
+      "name": "arg_types",
+      "class": "MacroOverloads",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::MacroOverload.arg_types",
+      "name": "arg_types",
+      "class": "MacroOverload",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::CharacterSet.arg_types",
+      "name": "arg_types",
+      "class": "CharacterSet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::AlterColumn.arg_types",
+      "name": "arg_types",
+      "class": "AlterColumn",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::ModifyColumn.arg_types",
+      "name": "arg_types",
+      "class": "ModifyColumn",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::AlterIndex.arg_types",
+      "name": "arg_types",
+      "class": "AlterIndex",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::AlterSortKey.arg_types",
+      "name": "arg_types",
+      "class": "AlterSortKey",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::AlterSet.arg_types",
+      "name": "arg_types",
+      "class": "AlterSet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::RenameColumn.arg_types",
+      "name": "arg_types",
+      "class": "RenameColumn",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::RenameIndex.arg_types",
+      "name": "arg_types",
+      "class": "RenameIndex",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::AlterModifySqlSecurity.arg_types",
+      "name": "arg_types",
+      "class": "AlterModifySqlSecurity",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Comment.arg_types",
+      "name": "arg_types",
+      "class": "Comment",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Comprehension.arg_types",
+      "name": "arg_types",
+      "class": "Comprehension",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::MergeTreeTTLAction.arg_types",
+      "name": "arg_types",
+      "class": "MergeTreeTTLAction",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::MergeTreeTTL.arg_types",
+      "name": "arg_types",
+      "class": "MergeTreeTTL",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Drop.arg_types",
+      "name": "arg_types",
+      "class": "Drop",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::DropPrimaryKey.arg_types",
+      "name": "arg_types",
+      "class": "DropPrimaryKey",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Undrop.arg_types",
+      "name": "arg_types",
+      "class": "Undrop",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Command.arg_types",
+      "name": "arg_types",
+      "class": "Command",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Command._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "Command",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Transaction.arg_types",
+      "name": "arg_types",
+      "class": "Transaction",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Commit.arg_types",
+      "name": "arg_types",
+      "class": "Commit",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Rollback.arg_types",
+      "name": "arg_types",
+      "class": "Rollback",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Alter.arg_types",
+      "name": "arg_types",
+      "class": "Alter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::AlterSession.arg_types",
+      "name": "arg_types",
+      "class": "AlterSession",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Use.arg_types",
+      "name": "arg_types",
+      "class": "Use",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::NextValueFor.arg_types",
+      "name": "arg_types",
+      "class": "NextValueFor",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/ddl.py::Execute.arg_types",
+      "name": "arg_types",
+      "class": "Execute",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Delete.arg_types",
+      "name": "arg_types",
+      "class": "Delete",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Export.arg_types",
+      "name": "arg_types",
+      "class": "Export",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::CopyParameter.arg_types",
+      "name": "arg_types",
+      "class": "CopyParameter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Copy.arg_types",
+      "name": "arg_types",
+      "class": "Copy",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Credentials.arg_types",
+      "name": "arg_types",
+      "class": "Credentials",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Directory.arg_types",
+      "name": "arg_types",
+      "class": "Directory",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Insert.arg_types",
+      "name": "arg_types",
+      "class": "Insert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::OnConflict.arg_types",
+      "name": "arg_types",
+      "class": "OnConflict",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Returning.arg_types",
+      "name": "arg_types",
+      "class": "Returning",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::LoadData.arg_types",
+      "name": "arg_types",
+      "class": "LoadData",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Update.arg_types",
+      "name": "arg_types",
+      "class": "Update",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Merge.arg_types",
+      "name": "arg_types",
+      "class": "Merge",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::When.arg_types",
+      "name": "arg_types",
+      "class": "When",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/dml.py::Whens.arg_types",
+      "name": "arg_types",
+      "class": "Whens",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Cast.is_cast",
+      "name": "is_cast",
+      "class": "Cast",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Cast.arg_types",
+      "name": "arg_types",
+      "class": "Cast",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::TryCast.arg_types",
+      "name": "arg_types",
+      "class": "TryCast",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CastToStrType.arg_types",
+      "name": "arg_types",
+      "class": "CastToStrType",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Convert.arg_types",
+      "name": "arg_types",
+      "class": "Convert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::If.arg_types",
+      "name": "arg_types",
+      "class": "If",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::If._sql_names",
+      "name": "_sql_names",
+      "class": "If",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Case.arg_types",
+      "name": "arg_types",
+      "class": "Case",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Coalesce.arg_types",
+      "name": "arg_types",
+      "class": "Coalesce",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Coalesce.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Coalesce",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Coalesce._sql_names",
+      "name": "_sql_names",
+      "class": "Coalesce",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::DecodeCase.arg_types",
+      "name": "arg_types",
+      "class": "DecodeCase",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::DecodeCase.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "DecodeCase",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::EqualNull.arg_types",
+      "name": "arg_types",
+      "class": "EqualNull",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Greatest.arg_types",
+      "name": "arg_types",
+      "class": "Greatest",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Greatest.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Greatest",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Least.arg_types",
+      "name": "arg_types",
+      "class": "Least",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Least.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Least",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Nullif.arg_types",
+      "name": "arg_types",
+      "class": "Nullif",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::ObjectTransform.arg_types",
+      "name": "arg_types",
+      "class": "ObjectTransform",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Nvl2.arg_types",
+      "name": "arg_types",
+      "class": "Nvl2",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CheckXml.arg_types",
+      "name": "arg_types",
+      "class": "CheckXml",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Exists.arg_types",
+      "name": "arg_types",
+      "class": "Exists",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Float64.arg_types",
+      "name": "arg_types",
+      "class": "Float64",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::ToBoolean.arg_types",
+      "name": "arg_types",
+      "class": "ToBoolean",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentAccount.arg_types",
+      "name": "arg_types",
+      "class": "CurrentAccount",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentAccountName.arg_types",
+      "name": "arg_types",
+      "class": "CurrentAccountName",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentAvailableRoles.arg_types",
+      "name": "arg_types",
+      "class": "CurrentAvailableRoles",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentCatalog.arg_types",
+      "name": "arg_types",
+      "class": "CurrentCatalog",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentClient.arg_types",
+      "name": "arg_types",
+      "class": "CurrentClient",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentDatabase.arg_types",
+      "name": "arg_types",
+      "class": "CurrentDatabase",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentIpAddress.arg_types",
+      "name": "arg_types",
+      "class": "CurrentIpAddress",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentOrganizationName.arg_types",
+      "name": "arg_types",
+      "class": "CurrentOrganizationName",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentOrganizationUser.arg_types",
+      "name": "arg_types",
+      "class": "CurrentOrganizationUser",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentRegion.arg_types",
+      "name": "arg_types",
+      "class": "CurrentRegion",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentRole.arg_types",
+      "name": "arg_types",
+      "class": "CurrentRole",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentRoleType.arg_types",
+      "name": "arg_types",
+      "class": "CurrentRoleType",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentSchema.arg_types",
+      "name": "arg_types",
+      "class": "CurrentSchema",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentSchemas.arg_types",
+      "name": "arg_types",
+      "class": "CurrentSchemas",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentSecondaryRoles.arg_types",
+      "name": "arg_types",
+      "class": "CurrentSecondaryRoles",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentSession.arg_types",
+      "name": "arg_types",
+      "class": "CurrentSession",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentStatement.arg_types",
+      "name": "arg_types",
+      "class": "CurrentStatement",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentTransaction.arg_types",
+      "name": "arg_types",
+      "class": "CurrentTransaction",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentUser.arg_types",
+      "name": "arg_types",
+      "class": "CurrentUser",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentUserId.arg_types",
+      "name": "arg_types",
+      "class": "CurrentUserId",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentVersion.arg_types",
+      "name": "arg_types",
+      "class": "CurrentVersion",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::CurrentWarehouse.arg_types",
+      "name": "arg_types",
+      "class": "CurrentWarehouse",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::SessionUser.arg_types",
+      "name": "arg_types",
+      "class": "SessionUser",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIClassify.arg_types",
+      "name": "arg_types",
+      "class": "AIClassify",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIClassify._sql_names",
+      "name": "_sql_names",
+      "class": "AIClassify",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIEmbed.arg_types",
+      "name": "arg_types",
+      "class": "AIEmbed",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIEmbed.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "AIEmbed",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIEmbed._sql_names",
+      "name": "_sql_names",
+      "class": "AIEmbed",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AISimilarity.arg_types",
+      "name": "arg_types",
+      "class": "AISimilarity",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AISimilarity.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "AISimilarity",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AISimilarity._sql_names",
+      "name": "_sql_names",
+      "class": "AISimilarity",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIGenerate.arg_types",
+      "name": "arg_types",
+      "class": "AIGenerate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIGenerate.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "AIGenerate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIGenerate._sql_names",
+      "name": "_sql_names",
+      "class": "AIGenerate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::FeaturesAtTime.arg_types",
+      "name": "arg_types",
+      "class": "FeaturesAtTime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::GenerateEmbedding.arg_types",
+      "name": "arg_types",
+      "class": "GenerateEmbedding",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::GenerateText.arg_types",
+      "name": "arg_types",
+      "class": "GenerateText",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::GenerateTable.arg_types",
+      "name": "arg_types",
+      "class": "GenerateTable",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::GenerateBool.arg_types",
+      "name": "arg_types",
+      "class": "GenerateBool",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::GenerateInt.arg_types",
+      "name": "arg_types",
+      "class": "GenerateInt",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::GenerateDouble.arg_types",
+      "name": "arg_types",
+      "class": "GenerateDouble",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::MLForecast.arg_types",
+      "name": "arg_types",
+      "class": "MLForecast",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::AIForecast.arg_types",
+      "name": "arg_types",
+      "class": "AIForecast",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::MLTranslate.arg_types",
+      "name": "arg_types",
+      "class": "MLTranslate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Predict.arg_types",
+      "name": "arg_types",
+      "class": "Predict",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::VectorSearch.arg_types",
+      "name": "arg_types",
+      "class": "VectorSearch",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::ReadCSV._sql_names",
+      "name": "_sql_names",
+      "class": "ReadCSV",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::ReadCSV.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "ReadCSV",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::ReadCSV.arg_types",
+      "name": "arg_types",
+      "class": "ReadCSV",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::ReadParquet.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "ReadParquet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::ReadParquet.arg_types",
+      "name": "arg_types",
+      "class": "ReadParquet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::XMLElement._sql_names",
+      "name": "_sql_names",
+      "class": "XMLElement",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::XMLElement.arg_types",
+      "name": "arg_types",
+      "class": "XMLElement",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::GetIgnoreCase.arg_types",
+      "name": "arg_types",
+      "class": "GetIgnoreCase",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::XMLGet._sql_names",
+      "name": "_sql_names",
+      "class": "XMLGet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::XMLGet.arg_types",
+      "name": "arg_types",
+      "class": "XMLGet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::XMLTable.arg_types",
+      "name": "arg_types",
+      "class": "XMLTable",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::ParseIp.arg_types",
+      "name": "arg_types",
+      "class": "ParseIp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Columns.arg_types",
+      "name": "arg_types",
+      "class": "Columns",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Normal.arg_types",
+      "name": "arg_types",
+      "class": "Normal",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Rand._sql_names",
+      "name": "_sql_names",
+      "class": "Rand",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Rand.arg_types",
+      "name": "arg_types",
+      "class": "Rand",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Randn.arg_types",
+      "name": "arg_types",
+      "class": "Randn",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Randstr.arg_types",
+      "name": "arg_types",
+      "class": "Randstr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::RangeBucket.arg_types",
+      "name": "arg_types",
+      "class": "RangeBucket",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::RangeN.arg_types",
+      "name": "arg_types",
+      "class": "RangeN",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Seq1.arg_types",
+      "name": "arg_types",
+      "class": "Seq1",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Seq2.arg_types",
+      "name": "arg_types",
+      "class": "Seq2",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Seq4.arg_types",
+      "name": "arg_types",
+      "class": "Seq4",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Seq8.arg_types",
+      "name": "arg_types",
+      "class": "Seq8",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Uniform.arg_types",
+      "name": "arg_types",
+      "class": "Uniform",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Uuid._sql_names",
+      "name": "_sql_names",
+      "class": "Uuid",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Uuid.arg_types",
+      "name": "arg_types",
+      "class": "Uuid",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::WidthBucket.arg_types",
+      "name": "arg_types",
+      "class": "WidthBucket",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/functions.py::Zipf.arg_types",
+      "name": "arg_types",
+      "class": "Zipf",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::CheckJson.arg_types",
+      "name": "arg_types",
+      "class": "CheckJson",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArray.arg_types",
+      "name": "arg_types",
+      "class": "JSONArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArray.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "JSONArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayAgg.arg_types",
+      "name": "arg_types",
+      "class": "JSONArrayAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayAppend.arg_types",
+      "name": "arg_types",
+      "class": "JSONArrayAppend",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayAppend.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "JSONArrayAppend",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayAppend._sql_names",
+      "name": "_sql_names",
+      "class": "JSONArrayAppend",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayContains.arg_types",
+      "name": "arg_types",
+      "class": "JSONArrayContains",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayContains._sql_names",
+      "name": "_sql_names",
+      "class": "JSONArrayContains",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayInsert.arg_types",
+      "name": "arg_types",
+      "class": "JSONArrayInsert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayInsert.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "JSONArrayInsert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONArrayInsert._sql_names",
+      "name": "_sql_names",
+      "class": "JSONArrayInsert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONBContains._sql_names",
+      "name": "_sql_names",
+      "class": "JSONBContains",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONBExists.arg_types",
+      "name": "arg_types",
+      "class": "JSONBExists",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONBExists._sql_names",
+      "name": "_sql_names",
+      "class": "JSONBExists",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONBExtract._sql_names",
+      "name": "_sql_names",
+      "class": "JSONBExtract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONBExtractScalar.arg_types",
+      "name": "arg_types",
+      "class": "JSONBExtractScalar",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONBExtractScalar._sql_names",
+      "name": "_sql_names",
+      "class": "JSONBExtractScalar",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONBObjectAgg.arg_types",
+      "name": "arg_types",
+      "class": "JSONBObjectAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExists.arg_types",
+      "name": "arg_types",
+      "class": "JSONExists",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExists._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "JSONExists",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExtract.arg_types",
+      "name": "arg_types",
+      "class": "JSONExtract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExtract._sql_names",
+      "name": "_sql_names",
+      "class": "JSONExtract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExtract.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "JSONExtract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExtractArray.arg_types",
+      "name": "arg_types",
+      "class": "JSONExtractArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExtractArray._sql_names",
+      "name": "_sql_names",
+      "class": "JSONExtractArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExtractScalar.arg_types",
+      "name": "arg_types",
+      "class": "JSONExtractScalar",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExtractScalar._sql_names",
+      "name": "_sql_names",
+      "class": "JSONExtractScalar",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONExtractScalar.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "JSONExtractScalar",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONFormat.arg_types",
+      "name": "arg_types",
+      "class": "JSONFormat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONFormat._sql_names",
+      "name": "_sql_names",
+      "class": "JSONFormat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONKeys.arg_types",
+      "name": "arg_types",
+      "class": "JSONKeys",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONKeys.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "JSONKeys",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONKeys._sql_names",
+      "name": "_sql_names",
+      "class": "JSONKeys",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONKeysAtDepth.arg_types",
+      "name": "arg_types",
+      "class": "JSONKeysAtDepth",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONObject.arg_types",
+      "name": "arg_types",
+      "class": "JSONObject",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONObjectAgg.arg_types",
+      "name": "arg_types",
+      "class": "JSONObjectAgg",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONRemove.arg_types",
+      "name": "arg_types",
+      "class": "JSONRemove",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONRemove.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "JSONRemove",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONRemove._sql_names",
+      "name": "_sql_names",
+      "class": "JSONRemove",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONSet.arg_types",
+      "name": "arg_types",
+      "class": "JSONSet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONSet.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "JSONSet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONSet._sql_names",
+      "name": "_sql_names",
+      "class": "JSONSet",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONStripNulls.arg_types",
+      "name": "arg_types",
+      "class": "JSONStripNulls",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONStripNulls._sql_names",
+      "name": "_sql_names",
+      "class": "JSONStripNulls",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONTable.arg_types",
+      "name": "arg_types",
+      "class": "JSONTable",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONType.arg_types",
+      "name": "arg_types",
+      "class": "JSONType",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::JSONType._sql_names",
+      "name": "_sql_names",
+      "class": "JSONType",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::ObjectId.arg_types",
+      "name": "arg_types",
+      "class": "ObjectId",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::ObjectInsert.arg_types",
+      "name": "arg_types",
+      "class": "ObjectInsert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::OpenJSON.arg_types",
+      "name": "arg_types",
+      "class": "OpenJSON",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::FromJson.arg_types",
+      "name": "arg_types",
+      "class": "FromJson",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::ParseJSON._sql_names",
+      "name": "_sql_names",
+      "class": "ParseJSON",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/json.py::ParseJSON.arg_types",
+      "name": "arg_types",
+      "class": "ParseJSON",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Atan.arg_types",
+      "name": "arg_types",
+      "class": "Atan",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Atan2.arg_types",
+      "name": "arg_types",
+      "class": "Atan2",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::CosineDistance.arg_types",
+      "name": "arg_types",
+      "class": "CosineDistance",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::DotProduct.arg_types",
+      "name": "arg_types",
+      "class": "DotProduct",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::EuclideanDistance.arg_types",
+      "name": "arg_types",
+      "class": "EuclideanDistance",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::JarowinklerSimilarity.arg_types",
+      "name": "arg_types",
+      "class": "JarowinklerSimilarity",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::ManhattanDistance.arg_types",
+      "name": "arg_types",
+      "class": "ManhattanDistance",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Ceil.arg_types",
+      "name": "arg_types",
+      "class": "Ceil",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Ceil._sql_names",
+      "name": "_sql_names",
+      "class": "Ceil",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Floor.arg_types",
+      "name": "arg_types",
+      "class": "Floor",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::IsInf._sql_names",
+      "name": "_sql_names",
+      "class": "IsInf",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::IsNan._sql_names",
+      "name": "_sql_names",
+      "class": "IsNan",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Log.arg_types",
+      "name": "arg_types",
+      "class": "Log",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Nanvl.arg_types",
+      "name": "arg_types",
+      "class": "Nanvl",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Pi.arg_types",
+      "name": "arg_types",
+      "class": "Pi",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Round.arg_types",
+      "name": "arg_types",
+      "class": "Round",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Sign._sql_names",
+      "name": "_sql_names",
+      "class": "Sign",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Trunc.arg_types",
+      "name": "arg_types",
+      "class": "Trunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Trunc._sql_names",
+      "name": "_sql_names",
+      "class": "Trunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::SafeAdd.arg_types",
+      "name": "arg_types",
+      "class": "SafeAdd",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::SafeDivide.arg_types",
+      "name": "arg_types",
+      "class": "SafeDivide",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::SafeMultiply.arg_types",
+      "name": "arg_types",
+      "class": "SafeMultiply",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::SafeSubtract.arg_types",
+      "name": "arg_types",
+      "class": "SafeSubtract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Booland.arg_types",
+      "name": "arg_types",
+      "class": "Booland",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Boolnot.arg_types",
+      "name": "arg_types",
+      "class": "Boolnot",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Boolor.arg_types",
+      "name": "arg_types",
+      "class": "Boolor",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Getbit._sql_names",
+      "name": "_sql_names",
+      "class": "Getbit",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/math.py::Getbit.arg_types",
+      "name": "arg_types",
+      "class": "Getbit",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::Property.arg_types",
+      "name": "arg_types",
+      "class": "Property",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::GrantPrivilege.arg_types",
+      "name": "arg_types",
+      "class": "GrantPrivilege",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::GrantPrincipal.arg_types",
+      "name": "arg_types",
+      "class": "GrantPrincipal",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::AllowedValuesProperty.arg_types",
+      "name": "arg_types",
+      "class": "AllowedValuesProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::AggregateKeyProperty.arg_types",
+      "name": "arg_types",
+      "class": "AggregateKeyProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::AlgorithmProperty.arg_types",
+      "name": "arg_types",
+      "class": "AlgorithmProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ApiProperty.arg_types",
+      "name": "arg_types",
+      "class": "ApiProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ApplicationProperty.arg_types",
+      "name": "arg_types",
+      "class": "ApplicationProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::AutoIncrementProperty.arg_types",
+      "name": "arg_types",
+      "class": "AutoIncrementProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::AutoRefreshProperty.arg_types",
+      "name": "arg_types",
+      "class": "AutoRefreshProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::BackupProperty.arg_types",
+      "name": "arg_types",
+      "class": "BackupProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::BuildProperty.arg_types",
+      "name": "arg_types",
+      "class": "BuildProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::BlockCompressionProperty.arg_types",
+      "name": "arg_types",
+      "class": "BlockCompressionProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::CalledOnNullInputProperty.arg_types",
+      "name": "arg_types",
+      "class": "CalledOnNullInputProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::CatalogProperty.arg_types",
+      "name": "arg_types",
+      "class": "CatalogProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::CharacterSetProperty.arg_types",
+      "name": "arg_types",
+      "class": "CharacterSetProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ChecksumProperty.arg_types",
+      "name": "arg_types",
+      "class": "ChecksumProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ClusterProperty.arg_types",
+      "name": "arg_types",
+      "class": "ClusterProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::CollateProperty.arg_types",
+      "name": "arg_types",
+      "class": "CollateProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ComputeProperty.arg_types",
+      "name": "arg_types",
+      "class": "ComputeProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::CopyGrantsProperty.arg_types",
+      "name": "arg_types",
+      "class": "CopyGrantsProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::CopyTagsProperty.arg_types",
+      "name": "arg_types",
+      "class": "CopyTagsProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DataBlocksizeProperty.arg_types",
+      "name": "arg_types",
+      "class": "DataBlocksizeProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DataDeletionProperty.arg_types",
+      "name": "arg_types",
+      "class": "DataDeletionProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DatabaseProperty.arg_types",
+      "name": "arg_types",
+      "class": "DatabaseProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DefinerProperty.arg_types",
+      "name": "arg_types",
+      "class": "DefinerProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DefinerProperty._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "DefinerProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DistKeyProperty.arg_types",
+      "name": "arg_types",
+      "class": "DistKeyProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DistributedByProperty.arg_types",
+      "name": "arg_types",
+      "class": "DistributedByProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DistStyleProperty.arg_types",
+      "name": "arg_types",
+      "class": "DistStyleProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DuplicateKeyProperty.arg_types",
+      "name": "arg_types",
+      "class": "DuplicateKeyProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::EngineProperty.arg_types",
+      "name": "arg_types",
+      "class": "EngineProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::UuidProperty.arg_types",
+      "name": "arg_types",
+      "class": "UuidProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::HeapProperty.arg_types",
+      "name": "arg_types",
+      "class": "HeapProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::HybridProperty.arg_types",
+      "name": "arg_types",
+      "class": "HybridProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::HandlerProperty.arg_types",
+      "name": "arg_types",
+      "class": "HandlerProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ParameterStyleProperty.arg_types",
+      "name": "arg_types",
+      "class": "ParameterStyleProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ToTableProperty.arg_types",
+      "name": "arg_types",
+      "class": "ToTableProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ExecuteAsProperty.arg_types",
+      "name": "arg_types",
+      "class": "ExecuteAsProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ExternalProperty.arg_types",
+      "name": "arg_types",
+      "class": "ExternalProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::FallbackProperty.arg_types",
+      "name": "arg_types",
+      "class": "FallbackProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::FileFormatProperty.arg_types",
+      "name": "arg_types",
+      "class": "FileFormatProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::CredentialsProperty.arg_types",
+      "name": "arg_types",
+      "class": "CredentialsProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::FreespaceProperty.arg_types",
+      "name": "arg_types",
+      "class": "FreespaceProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::GlobalProperty.arg_types",
+      "name": "arg_types",
+      "class": "GlobalProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::IcebergProperty.arg_types",
+      "name": "arg_types",
+      "class": "IcebergProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::InheritsProperty.arg_types",
+      "name": "arg_types",
+      "class": "InheritsProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::InputModelProperty.arg_types",
+      "name": "arg_types",
+      "class": "InputModelProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::OutputModelProperty.arg_types",
+      "name": "arg_types",
+      "class": "OutputModelProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::IsolatedLoadingProperty.arg_types",
+      "name": "arg_types",
+      "class": "IsolatedLoadingProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::JournalProperty.arg_types",
+      "name": "arg_types",
+      "class": "JournalProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::LanguageProperty.arg_types",
+      "name": "arg_types",
+      "class": "LanguageProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::EnviromentProperty.arg_types",
+      "name": "arg_types",
+      "class": "EnviromentProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ClusteredByProperty.arg_types",
+      "name": "arg_types",
+      "class": "ClusteredByProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DictProperty.arg_types",
+      "name": "arg_types",
+      "class": "DictProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DictRange.arg_types",
+      "name": "arg_types",
+      "class": "DictRange",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::DynamicProperty.arg_types",
+      "name": "arg_types",
+      "class": "DynamicProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::OnCluster.arg_types",
+      "name": "arg_types",
+      "class": "OnCluster",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::EmptyProperty.arg_types",
+      "name": "arg_types",
+      "class": "EmptyProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::LikeProperty.arg_types",
+      "name": "arg_types",
+      "class": "LikeProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::LocationProperty.arg_types",
+      "name": "arg_types",
+      "class": "LocationProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::LockProperty.arg_types",
+      "name": "arg_types",
+      "class": "LockProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::LockingProperty.arg_types",
+      "name": "arg_types",
+      "class": "LockingProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::LogProperty.arg_types",
+      "name": "arg_types",
+      "class": "LogProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::MaskingProperty.arg_types",
+      "name": "arg_types",
+      "class": "MaskingProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::MaterializedProperty.arg_types",
+      "name": "arg_types",
+      "class": "MaterializedProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::MergeBlockRatioProperty.arg_types",
+      "name": "arg_types",
+      "class": "MergeBlockRatioProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ModuleProperty.arg_types",
+      "name": "arg_types",
+      "class": "ModuleProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::NetworkProperty.arg_types",
+      "name": "arg_types",
+      "class": "NetworkProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::NoPrimaryIndexProperty.arg_types",
+      "name": "arg_types",
+      "class": "NoPrimaryIndexProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::OnProperty.arg_types",
+      "name": "arg_types",
+      "class": "OnProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::OnCommitProperty.arg_types",
+      "name": "arg_types",
+      "class": "OnCommitProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionedByProperty.arg_types",
+      "name": "arg_types",
+      "class": "PartitionedByProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionedByBucket.arg_types",
+      "name": "arg_types",
+      "class": "PartitionedByBucket",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionByTruncate.arg_types",
+      "name": "arg_types",
+      "class": "PartitionByTruncate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionByRangeProperty.arg_types",
+      "name": "arg_types",
+      "class": "PartitionByRangeProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionByRangePropertyDynamic.arg_types",
+      "name": "arg_types",
+      "class": "PartitionByRangePropertyDynamic",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::RollupProperty.arg_types",
+      "name": "arg_types",
+      "class": "RollupProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::RollupIndex.arg_types",
+      "name": "arg_types",
+      "class": "RollupIndex",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::RowAccessProperty.arg_types",
+      "name": "arg_types",
+      "class": "RowAccessProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionByListProperty.arg_types",
+      "name": "arg_types",
+      "class": "PartitionByListProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionList.arg_types",
+      "name": "arg_types",
+      "class": "PartitionList",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::RefreshTriggerProperty.arg_types",
+      "name": "arg_types",
+      "class": "RefreshTriggerProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::UniqueKeyProperty.arg_types",
+      "name": "arg_types",
+      "class": "UniqueKeyProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionBoundSpec.arg_types",
+      "name": "arg_types",
+      "class": "PartitionBoundSpec",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PartitionedOfProperty.arg_types",
+      "name": "arg_types",
+      "class": "PartitionedOfProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::PhysicalProperty.arg_types",
+      "name": "arg_types",
+      "class": "PhysicalProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::StreamingTableProperty.arg_types",
+      "name": "arg_types",
+      "class": "StreamingTableProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::RemoteWithConnectionModelProperty.arg_types",
+      "name": "arg_types",
+      "class": "RemoteWithConnectionModelProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ReturnsProperty.arg_types",
+      "name": "arg_types",
+      "class": "ReturnsProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::StrictProperty.arg_types",
+      "name": "arg_types",
+      "class": "StrictProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::RowFormatProperty.arg_types",
+      "name": "arg_types",
+      "class": "RowFormatProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::RowFormatDelimitedProperty.arg_types",
+      "name": "arg_types",
+      "class": "RowFormatDelimitedProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::RowFormatSerdeProperty.arg_types",
+      "name": "arg_types",
+      "class": "RowFormatSerdeProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::QueryTransform.arg_types",
+      "name": "arg_types",
+      "class": "QueryTransform",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SampleProperty.arg_types",
+      "name": "arg_types",
+      "class": "SampleProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SchemaCommentProperty.arg_types",
+      "name": "arg_types",
+      "class": "SchemaCommentProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SemanticView.arg_types",
+      "name": "arg_types",
+      "class": "SemanticView",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SerdeProperties.arg_types",
+      "name": "arg_types",
+      "class": "SerdeProperties",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SetProperty.arg_types",
+      "name": "arg_types",
+      "class": "SetProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SharingProperty.arg_types",
+      "name": "arg_types",
+      "class": "SharingProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SetConfigProperty.arg_types",
+      "name": "arg_types",
+      "class": "SetConfigProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SettingsProperty.arg_types",
+      "name": "arg_types",
+      "class": "SettingsProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SortKeyProperty.arg_types",
+      "name": "arg_types",
+      "class": "SortKeyProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SqlReadWriteProperty.arg_types",
+      "name": "arg_types",
+      "class": "SqlReadWriteProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SqlSecurityProperty.arg_types",
+      "name": "arg_types",
+      "class": "SqlSecurityProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::StabilityProperty.arg_types",
+      "name": "arg_types",
+      "class": "StabilityProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::StorageHandlerProperty.arg_types",
+      "name": "arg_types",
+      "class": "StorageHandlerProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::StorageProperty.arg_types",
+      "name": "arg_types",
+      "class": "StorageProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::UsingProperty.arg_types",
+      "name": "arg_types",
+      "class": "UsingProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::TemporaryProperty.arg_types",
+      "name": "arg_types",
+      "class": "TemporaryProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::VirtualProperty.arg_types",
+      "name": "arg_types",
+      "class": "VirtualProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SecureProperty.arg_types",
+      "name": "arg_types",
+      "class": "SecureProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::SecurityIntegrationProperty.arg_types",
+      "name": "arg_types",
+      "class": "SecurityIntegrationProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::Tags.arg_types",
+      "name": "arg_types",
+      "class": "Tags",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::TableSpaceProperty.arg_types",
+      "name": "arg_types",
+      "class": "TableSpaceProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::TransformModelProperty.arg_types",
+      "name": "arg_types",
+      "class": "TransformModelProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::TransientProperty.arg_types",
+      "name": "arg_types",
+      "class": "TransientProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::UnloggedProperty.arg_types",
+      "name": "arg_types",
+      "class": "UnloggedProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::UsingTemplateProperty.arg_types",
+      "name": "arg_types",
+      "class": "UsingTemplateProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ViewAttributeProperty.arg_types",
+      "name": "arg_types",
+      "class": "ViewAttributeProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::VolatileProperty.arg_types",
+      "name": "arg_types",
+      "class": "VolatileProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::WithDataProperty.arg_types",
+      "name": "arg_types",
+      "class": "WithDataProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::WithJournalTableProperty.arg_types",
+      "name": "arg_types",
+      "class": "WithJournalTableProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::WithSchemaBindingProperty.arg_types",
+      "name": "arg_types",
+      "class": "WithSchemaBindingProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::WithSystemVersioningProperty.arg_types",
+      "name": "arg_types",
+      "class": "WithSystemVersioningProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::WithProcedureOptions.arg_types",
+      "name": "arg_types",
+      "class": "WithProcedureOptions",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::EncodeProperty.arg_types",
+      "name": "arg_types",
+      "class": "EncodeProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::IncludeProperty.arg_types",
+      "name": "arg_types",
+      "class": "IncludeProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::ForceProperty.arg_types",
+      "name": "arg_types",
+      "class": "ForceProperty",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::Properties.arg_types",
+      "name": "arg_types",
+      "class": "Properties",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::Properties.NAME_TO_PROPERTY",
+      "name": "NAME_TO_PROPERTY",
+      "class": "Properties",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::Properties.PROPERTY_TO_NAME",
+      "name": "PROPERTY_TO_NAME",
+      "class": "Properties",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/properties.py::Properties.Location",
+      "name": "Location",
+      "class": "Properties",
+      "status": "enum_alias"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::QueryBand.arg_types",
+      "name": "arg_types",
+      "class": "QueryBand",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::RecursiveWithSearch.arg_types",
+      "name": "arg_types",
+      "class": "RecursiveWithSearch",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::With.arg_types",
+      "name": "arg_types",
+      "class": "With",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::CTE.arg_types",
+      "name": "arg_types",
+      "class": "CTE",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ProjectionDef.arg_types",
+      "name": "arg_types",
+      "class": "ProjectionDef",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::TableAlias.arg_types",
+      "name": "arg_types",
+      "class": "TableAlias",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::BitString.is_primitive",
+      "name": "is_primitive",
+      "class": "BitString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::HexString.arg_types",
+      "name": "arg_types",
+      "class": "HexString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::HexString.is_primitive",
+      "name": "is_primitive",
+      "class": "HexString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ByteString.arg_types",
+      "name": "arg_types",
+      "class": "ByteString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ByteString.is_primitive",
+      "name": "is_primitive",
+      "class": "ByteString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ByteString._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "ByteString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::RawString.is_primitive",
+      "name": "is_primitive",
+      "class": "RawString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::RawString._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "RawString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::UnicodeString.arg_types",
+      "name": "arg_types",
+      "class": "UnicodeString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::UnicodeString._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "UnicodeString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ColumnPosition.arg_types",
+      "name": "arg_types",
+      "class": "ColumnPosition",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ColumnDef.arg_types",
+      "name": "arg_types",
+      "class": "ColumnDef",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Changes.arg_types",
+      "name": "arg_types",
+      "class": "Changes",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Connect.arg_types",
+      "name": "arg_types",
+      "class": "Connect",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Into.arg_types",
+      "name": "arg_types",
+      "class": "Into",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Index.arg_types",
+      "name": "arg_types",
+      "class": "Index",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ConditionalInsert.arg_types",
+      "name": "arg_types",
+      "class": "ConditionalInsert",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::MultitableInserts.arg_types",
+      "name": "arg_types",
+      "class": "MultitableInserts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::OnCondition.arg_types",
+      "name": "arg_types",
+      "class": "OnCondition",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Introducer.arg_types",
+      "name": "arg_types",
+      "class": "Introducer",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::National.is_primitive",
+      "name": "is_primitive",
+      "class": "National",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::National._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "National",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Partition.arg_types",
+      "name": "arg_types",
+      "class": "Partition",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::PartitionRange.arg_types",
+      "name": "arg_types",
+      "class": "PartitionRange",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Fetch.arg_types",
+      "name": "arg_types",
+      "class": "Fetch",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Grant.arg_types",
+      "name": "arg_types",
+      "class": "Grant",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Revoke.arg_types",
+      "name": "arg_types",
+      "class": "Revoke",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Group.arg_types",
+      "name": "arg_types",
+      "class": "Group",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Cube.arg_types",
+      "name": "arg_types",
+      "class": "Cube",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Rollup.arg_types",
+      "name": "arg_types",
+      "class": "Rollup",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::GroupingSets.arg_types",
+      "name": "arg_types",
+      "class": "GroupingSets",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Lambda.arg_types",
+      "name": "arg_types",
+      "class": "Lambda",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Limit.arg_types",
+      "name": "arg_types",
+      "class": "Limit",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::LimitOptions.arg_types",
+      "name": "arg_types",
+      "class": "LimitOptions",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Join.arg_types",
+      "name": "arg_types",
+      "class": "Join",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Nearest.arg_types",
+      "name": "arg_types",
+      "class": "Nearest",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Lateral.arg_types",
+      "name": "arg_types",
+      "class": "Lateral",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::TableFromRows.arg_types",
+      "name": "arg_types",
+      "class": "TableFromRows",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::MatchRecognizeMeasure.arg_types",
+      "name": "arg_types",
+      "class": "MatchRecognizeMeasure",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::MatchRecognize.arg_types",
+      "name": "arg_types",
+      "class": "MatchRecognize",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Offset.arg_types",
+      "name": "arg_types",
+      "class": "Offset",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Order.arg_types",
+      "name": "arg_types",
+      "class": "Order",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::WithFill.arg_types",
+      "name": "arg_types",
+      "class": "WithFill",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::SkipJSONColumn.arg_types",
+      "name": "arg_types",
+      "class": "SkipJSONColumn",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Cluster.arg_types",
+      "name": "arg_types",
+      "class": "Cluster",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::InputOutputFormat.arg_types",
+      "name": "arg_types",
+      "class": "InputOutputFormat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Tuple.arg_types",
+      "name": "arg_types",
+      "class": "Tuple",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::QueryOption.arg_types",
+      "name": "arg_types",
+      "class": "QueryOption",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ForClause.arg_types",
+      "name": "arg_types",
+      "class": "ForClause",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::WithTableHint.arg_types",
+      "name": "arg_types",
+      "class": "WithTableHint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::IndexTableHint.arg_types",
+      "name": "arg_types",
+      "class": "IndexTableHint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::HistoricalData.arg_types",
+      "name": "arg_types",
+      "class": "HistoricalData",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Put.arg_types",
+      "name": "arg_types",
+      "class": "Put",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Get.arg_types",
+      "name": "arg_types",
+      "class": "Get",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ListStage.arg_types",
+      "name": "arg_types",
+      "class": "ListStage",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Table.arg_types",
+      "name": "arg_types",
+      "class": "Table",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::SetOperation.arg_types",
+      "name": "arg_types",
+      "class": "SetOperation",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Values.arg_types",
+      "name": "arg_types",
+      "class": "Values",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Version.arg_types",
+      "name": "arg_types",
+      "class": "Version",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Schema.arg_types",
+      "name": "arg_types",
+      "class": "Schema",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Lock.arg_types",
+      "name": "arg_types",
+      "class": "Lock",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Select.arg_types",
+      "name": "arg_types",
+      "class": "Select",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Subquery.is_subquery",
+      "name": "is_subquery",
+      "class": "Subquery",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Subquery.arg_types",
+      "name": "arg_types",
+      "class": "Subquery",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::TableSample.arg_types",
+      "name": "arg_types",
+      "class": "TableSample",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Tag.arg_types",
+      "name": "arg_types",
+      "class": "Tag",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Pivot.arg_types",
+      "name": "arg_types",
+      "class": "Pivot",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::UnpivotColumns.arg_types",
+      "name": "arg_types",
+      "class": "UnpivotColumns",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Window.arg_types",
+      "name": "arg_types",
+      "class": "Window",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::WindowSpec.arg_types",
+      "name": "arg_types",
+      "class": "WindowSpec",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::PartitionByExcluding.arg_types",
+      "name": "arg_types",
+      "class": "PartitionByExcluding",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Analyze.arg_types",
+      "name": "arg_types",
+      "class": "Analyze",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AnalyzeStatistics.arg_types",
+      "name": "arg_types",
+      "class": "AnalyzeStatistics",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AnalyzeHistogram.arg_types",
+      "name": "arg_types",
+      "class": "AnalyzeHistogram",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AnalyzeSample.arg_types",
+      "name": "arg_types",
+      "class": "AnalyzeSample",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AnalyzeListChainedRows.arg_types",
+      "name": "arg_types",
+      "class": "AnalyzeListChainedRows",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AnalyzeDelete.arg_types",
+      "name": "arg_types",
+      "class": "AnalyzeDelete",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AnalyzeWith.arg_types",
+      "name": "arg_types",
+      "class": "AnalyzeWith",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AnalyzeValidate.arg_types",
+      "name": "arg_types",
+      "class": "AnalyzeValidate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AddPartition.arg_types",
+      "name": "arg_types",
+      "class": "AddPartition",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::AttachOption.arg_types",
+      "name": "arg_types",
+      "class": "AttachOption",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::DropPartition.arg_types",
+      "name": "arg_types",
+      "class": "DropPartition",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ReplaceColumns.arg_types",
+      "name": "arg_types",
+      "class": "ReplaceColumns",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ReplacePartition.arg_types",
+      "name": "arg_types",
+      "class": "ReplacePartition",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::TranslateCharacters.arg_types",
+      "name": "arg_types",
+      "class": "TranslateCharacters",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::OverflowTruncateBehavior.arg_types",
+      "name": "arg_types",
+      "class": "OverflowTruncateBehavior",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSON.arg_types",
+      "name": "arg_types",
+      "class": "JSON",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPath.arg_types",
+      "name": "arg_types",
+      "class": "JSONPath",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathPart.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathPart",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathFilter.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathFilter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathFilter._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "JSONPathFilter",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathKey.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathKey",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathKey._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "JSONPathKey",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathRecursive.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathRecursive",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathRecursive._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "JSONPathRecursive",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathScript.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathScript",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathScript._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "JSONPathScript",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathSlice.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathSlice",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathSelector.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathSelector",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathSubscript.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathSubscript",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathUnion.arg_types",
+      "name": "arg_types",
+      "class": "JSONPathUnion",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONPathUnion._hash_raw_args",
+      "name": "_hash_raw_args",
+      "class": "JSONPathUnion",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONKeyValue.arg_types",
+      "name": "arg_types",
+      "class": "JSONKeyValue",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONColumnDef.arg_types",
+      "name": "arg_types",
+      "class": "JSONColumnDef",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONSchema.arg_types",
+      "name": "arg_types",
+      "class": "JSONSchema",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONValue.arg_types",
+      "name": "arg_types",
+      "class": "JSONValue",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONValueArray.arg_types",
+      "name": "arg_types",
+      "class": "JSONValueArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::OpenJSONColumnDef.arg_types",
+      "name": "arg_types",
+      "class": "OpenJSONColumnDef",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::JSONExtractQuote.arg_types",
+      "name": "arg_types",
+      "class": "JSONExtractQuote",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ScopeResolution.arg_types",
+      "name": "arg_types",
+      "class": "ScopeResolution",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::ModelAttribute.arg_types",
+      "name": "arg_types",
+      "class": "ModelAttribute",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::XMLKeyValueOption.arg_types",
+      "name": "arg_types",
+      "class": "XMLKeyValueOption",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Semicolon.arg_types",
+      "name": "arg_types",
+      "class": "Semicolon",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::StoredProcedure.arg_types",
+      "name": "arg_types",
+      "class": "StoredProcedure",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::Block.arg_types",
+      "name": "arg_types",
+      "class": "Block",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::IfBlock.arg_types",
+      "name": "arg_types",
+      "class": "IfBlock",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::CaseStatement.arg_types",
+      "name": "arg_types",
+      "class": "CaseStatement",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::WhileBlock.arg_types",
+      "name": "arg_types",
+      "class": "WhileBlock",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::LoopBlock.arg_types",
+      "name": "arg_types",
+      "class": "LoopBlock",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::RepeatBlock.arg_types",
+      "name": "arg_types",
+      "class": "RepeatBlock",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::EndStatement.arg_types",
+      "name": "arg_types",
+      "class": "EndStatement",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/query.py::FunctionSpecification.arg_types",
+      "name": "arg_types",
+      "class": "FunctionSpecification",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Chr.arg_types",
+      "name": "arg_types",
+      "class": "Chr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Chr.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Chr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Chr._sql_names",
+      "name": "_sql_names",
+      "class": "Chr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Concat.arg_types",
+      "name": "arg_types",
+      "class": "Concat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Concat.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Concat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ConcatWs.arg_types",
+      "name": "arg_types",
+      "class": "ConcatWs",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ConcatWs._sql_names",
+      "name": "_sql_names",
+      "class": "ConcatWs",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Contains.arg_types",
+      "name": "arg_types",
+      "class": "Contains",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Elt.arg_types",
+      "name": "arg_types",
+      "class": "Elt",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Elt.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Elt",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::EndsWith._sql_names",
+      "name": "_sql_names",
+      "class": "EndsWith",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::EndsWith.arg_types",
+      "name": "arg_types",
+      "class": "EndsWith",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Format.arg_types",
+      "name": "arg_types",
+      "class": "Format",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Format.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Format",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Initcap.arg_types",
+      "name": "arg_types",
+      "class": "Initcap",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Left.arg_types",
+      "name": "arg_types",
+      "class": "Left",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Length.arg_types",
+      "name": "arg_types",
+      "class": "Length",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Length._sql_names",
+      "name": "_sql_names",
+      "class": "Length",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Levenshtein.arg_types",
+      "name": "arg_types",
+      "class": "Levenshtein",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Lower._sql_names",
+      "name": "_sql_names",
+      "class": "Lower",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::MatchAgainst.arg_types",
+      "name": "arg_types",
+      "class": "MatchAgainst",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Normalize.arg_types",
+      "name": "arg_types",
+      "class": "Normalize",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::NumberToStr.arg_types",
+      "name": "arg_types",
+      "class": "NumberToStr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Overlay.arg_types",
+      "name": "arg_types",
+      "class": "Overlay",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Pad.arg_types",
+      "name": "arg_types",
+      "class": "Pad",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Repeat.arg_types",
+      "name": "arg_types",
+      "class": "Repeat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Replace.arg_types",
+      "name": "arg_types",
+      "class": "Replace",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Right.arg_types",
+      "name": "arg_types",
+      "class": "Right",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Search.arg_types",
+      "name": "arg_types",
+      "class": "Search",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::SearchIp.arg_types",
+      "name": "arg_types",
+      "class": "SearchIp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Secret.arg_types",
+      "name": "arg_types",
+      "class": "Secret",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Split.arg_types",
+      "name": "arg_types",
+      "class": "Split",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::SplitPart.arg_types",
+      "name": "arg_types",
+      "class": "SplitPart",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Strtok.arg_types",
+      "name": "arg_types",
+      "class": "Strtok",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::StartsWith._sql_names",
+      "name": "_sql_names",
+      "class": "StartsWith",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::StartsWith.arg_types",
+      "name": "arg_types",
+      "class": "StartsWith",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::StrPosition.arg_types",
+      "name": "arg_types",
+      "class": "StrPosition",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::StrToMap.arg_types",
+      "name": "arg_types",
+      "class": "StrToMap",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::String.arg_types",
+      "name": "arg_types",
+      "class": "String",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Stuff._sql_names",
+      "name": "_sql_names",
+      "class": "Stuff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Stuff.arg_types",
+      "name": "arg_types",
+      "class": "Stuff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Substring._sql_names",
+      "name": "_sql_names",
+      "class": "Substring",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Substring.arg_types",
+      "name": "arg_types",
+      "class": "Substring",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::SubstringIndex.arg_types",
+      "name": "arg_types",
+      "class": "SubstringIndex",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Translate.arg_types",
+      "name": "arg_types",
+      "class": "Translate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Trim.arg_types",
+      "name": "arg_types",
+      "class": "Trim",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Unicode.arg_types",
+      "name": "arg_types",
+      "class": "Unicode",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Upper._sql_names",
+      "name": "_sql_names",
+      "class": "Upper",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::WeightString.arg_types",
+      "name": "arg_types",
+      "class": "WeightString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Base64DecodeBinary.arg_types",
+      "name": "arg_types",
+      "class": "Base64DecodeBinary",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Base64DecodeString.arg_types",
+      "name": "arg_types",
+      "class": "Base64DecodeString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Base64Encode.arg_types",
+      "name": "arg_types",
+      "class": "Base64Encode",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ConvertToCharset.arg_types",
+      "name": "arg_types",
+      "class": "ConvertToCharset",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Decode.arg_types",
+      "name": "arg_types",
+      "class": "Decode",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Encode.arg_types",
+      "name": "arg_types",
+      "class": "Encode",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::FromBase.arg_types",
+      "name": "arg_types",
+      "class": "FromBase",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Hex.arg_types",
+      "name": "arg_types",
+      "class": "Hex",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ToBinary.arg_types",
+      "name": "arg_types",
+      "class": "ToBinary",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ToChar.arg_types",
+      "name": "arg_types",
+      "class": "ToChar",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ToDecfloat.arg_types",
+      "name": "arg_types",
+      "class": "ToDecfloat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ToDouble.arg_types",
+      "name": "arg_types",
+      "class": "ToDouble",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ToFile.arg_types",
+      "name": "arg_types",
+      "class": "ToFile",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ToNumber.arg_types",
+      "name": "arg_types",
+      "class": "ToNumber",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::TryBase64DecodeBinary.arg_types",
+      "name": "arg_types",
+      "class": "TryBase64DecodeBinary",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::TryBase64DecodeString.arg_types",
+      "name": "arg_types",
+      "class": "TryBase64DecodeString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::TryToDecfloat.arg_types",
+      "name": "arg_types",
+      "class": "TryToDecfloat",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Unhex.arg_types",
+      "name": "arg_types",
+      "class": "Unhex",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpCount.arg_types",
+      "name": "arg_types",
+      "class": "RegexpCount",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpExtract.arg_types",
+      "name": "arg_types",
+      "class": "RegexpExtract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpExtractAll.arg_types",
+      "name": "arg_types",
+      "class": "RegexpExtractAll",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpFullMatch.arg_types",
+      "name": "arg_types",
+      "class": "RegexpFullMatch",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpILike.arg_types",
+      "name": "arg_types",
+      "class": "RegexpILike",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpInstr.arg_types",
+      "name": "arg_types",
+      "class": "RegexpInstr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpReplace.arg_types",
+      "name": "arg_types",
+      "class": "RegexpReplace",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpSplit.arg_types",
+      "name": "arg_types",
+      "class": "RegexpSplit",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::RegexpSubstr.arg_types",
+      "name": "arg_types",
+      "class": "RegexpSubstr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Compress.arg_types",
+      "name": "arg_types",
+      "class": "Compress",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Decrypt.arg_types",
+      "name": "arg_types",
+      "class": "Decrypt",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::DecryptRaw.arg_types",
+      "name": "arg_types",
+      "class": "DecryptRaw",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::DecompressBinary.arg_types",
+      "name": "arg_types",
+      "class": "DecompressBinary",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::DecompressString.arg_types",
+      "name": "arg_types",
+      "class": "DecompressString",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::Encrypt.arg_types",
+      "name": "arg_types",
+      "class": "Encrypt",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::EncryptRaw.arg_types",
+      "name": "arg_types",
+      "class": "EncryptRaw",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::CityHash64.arg_types",
+      "name": "arg_types",
+      "class": "CityHash64",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::CityHash64.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "CityHash64",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::FarmFingerprint.arg_types",
+      "name": "arg_types",
+      "class": "FarmFingerprint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::FarmFingerprint.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "FarmFingerprint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::FarmFingerprint._sql_names",
+      "name": "_sql_names",
+      "class": "FarmFingerprint",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::MD5._sql_names",
+      "name": "_sql_names",
+      "class": "MD5",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::MD5Digest.arg_types",
+      "name": "arg_types",
+      "class": "MD5Digest",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::MD5Digest.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "MD5Digest",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::MD5Digest._sql_names",
+      "name": "_sql_names",
+      "class": "MD5Digest",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::SHA._sql_names",
+      "name": "_sql_names",
+      "class": "SHA",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::SHA2._sql_names",
+      "name": "_sql_names",
+      "class": "SHA2",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::SHA2.arg_types",
+      "name": "arg_types",
+      "class": "SHA2",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::SHA2Digest.arg_types",
+      "name": "arg_types",
+      "class": "SHA2Digest",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::StandardHash.arg_types",
+      "name": "arg_types",
+      "class": "StandardHash",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/string.py::ParseUrl.arg_types",
+      "name": "arg_types",
+      "class": "ParseUrl",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::CurrentDate.arg_types",
+      "name": "arg_types",
+      "class": "CurrentDate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::CurrentDatetime.arg_types",
+      "name": "arg_types",
+      "class": "CurrentDatetime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::CurrentTime.arg_types",
+      "name": "arg_types",
+      "class": "CurrentTime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::CurrentTimestamp.arg_types",
+      "name": "arg_types",
+      "class": "CurrentTimestamp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::CurrentTimestampLTZ.arg_types",
+      "name": "arg_types",
+      "class": "CurrentTimestampLTZ",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::CurrentTimezone.arg_types",
+      "name": "arg_types",
+      "class": "CurrentTimezone",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Localtime.arg_types",
+      "name": "arg_types",
+      "class": "Localtime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Localtimestamp.arg_types",
+      "name": "arg_types",
+      "class": "Localtimestamp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Systimestamp.arg_types",
+      "name": "arg_types",
+      "class": "Systimestamp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UtcDate.arg_types",
+      "name": "arg_types",
+      "class": "UtcDate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UtcTime.arg_types",
+      "name": "arg_types",
+      "class": "UtcTime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UtcTimestamp.arg_types",
+      "name": "arg_types",
+      "class": "UtcTimestamp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::AddMonths.arg_types",
+      "name": "arg_types",
+      "class": "AddMonths",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DateAdd.arg_types",
+      "name": "arg_types",
+      "class": "DateAdd",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DateBin.arg_types",
+      "name": "arg_types",
+      "class": "DateBin",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DateDiff._sql_names",
+      "name": "_sql_names",
+      "class": "DateDiff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DateDiff.arg_types",
+      "name": "arg_types",
+      "class": "DateDiff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DateSub.arg_types",
+      "name": "arg_types",
+      "class": "DateSub",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DatetimeAdd.arg_types",
+      "name": "arg_types",
+      "class": "DatetimeAdd",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DatetimeDiff.arg_types",
+      "name": "arg_types",
+      "class": "DatetimeDiff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DatetimeSub.arg_types",
+      "name": "arg_types",
+      "class": "DatetimeSub",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::MonthsBetween.arg_types",
+      "name": "arg_types",
+      "class": "MonthsBetween",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeAdd.arg_types",
+      "name": "arg_types",
+      "class": "TimeAdd",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeDiff.arg_types",
+      "name": "arg_types",
+      "class": "TimeDiff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeSub.arg_types",
+      "name": "arg_types",
+      "class": "TimeSub",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampAdd.arg_types",
+      "name": "arg_types",
+      "class": "TimestampAdd",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampDiff._sql_names",
+      "name": "_sql_names",
+      "class": "TimestampDiff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampDiff.arg_types",
+      "name": "arg_types",
+      "class": "TimestampDiff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampSub.arg_types",
+      "name": "arg_types",
+      "class": "TimestampSub",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TsOrDsAdd.arg_types",
+      "name": "arg_types",
+      "class": "TsOrDsAdd",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TsOrDsDiff.arg_types",
+      "name": "arg_types",
+      "class": "TsOrDsDiff",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DatetimeTrunc.arg_types",
+      "name": "arg_types",
+      "class": "DatetimeTrunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DateTrunc.arg_types",
+      "name": "arg_types",
+      "class": "DateTrunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampTrunc.arg_types",
+      "name": "arg_types",
+      "class": "TimestampTrunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeSlice.arg_types",
+      "name": "arg_types",
+      "class": "TimeSlice",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeTrunc.arg_types",
+      "name": "arg_types",
+      "class": "TimeTrunc",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DayOfMonth._sql_names",
+      "name": "_sql_names",
+      "class": "DayOfMonth",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DayOfWeek._sql_names",
+      "name": "_sql_names",
+      "class": "DayOfWeek",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DayOfWeekIso._sql_names",
+      "name": "_sql_names",
+      "class": "DayOfWeekIso",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DayOfYear._sql_names",
+      "name": "_sql_names",
+      "class": "DayOfYear",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Dayname.arg_types",
+      "name": "arg_types",
+      "class": "Dayname",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Extract.arg_types",
+      "name": "arg_types",
+      "class": "Extract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::GetExtract.arg_types",
+      "name": "arg_types",
+      "class": "GetExtract",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Monthname.arg_types",
+      "name": "arg_types",
+      "class": "Monthname",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Week.arg_types",
+      "name": "arg_types",
+      "class": "Week",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::WeekOfYear._sql_names",
+      "name": "_sql_names",
+      "class": "WeekOfYear",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::YearOfWeek._sql_names",
+      "name": "_sql_names",
+      "class": "YearOfWeek",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::YearOfWeekIso._sql_names",
+      "name": "_sql_names",
+      "class": "YearOfWeekIso",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Date.arg_types",
+      "name": "arg_types",
+      "class": "Date",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Date.is_var_len_args",
+      "name": "is_var_len_args",
+      "class": "Date",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DateFromParts._sql_names",
+      "name": "_sql_names",
+      "class": "DateFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::DateFromParts.arg_types",
+      "name": "arg_types",
+      "class": "DateFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Datetime.arg_types",
+      "name": "arg_types",
+      "class": "Datetime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::GapFill.arg_types",
+      "name": "arg_types",
+      "class": "GapFill",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::GenerateDateArray.arg_types",
+      "name": "arg_types",
+      "class": "GenerateDateArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::GenerateTimestampArray.arg_types",
+      "name": "arg_types",
+      "class": "GenerateTimestampArray",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::LastDay._sql_names",
+      "name": "_sql_names",
+      "class": "LastDay",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::LastDay.arg_types",
+      "name": "arg_types",
+      "class": "LastDay",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::MakeInterval.arg_types",
+      "name": "arg_types",
+      "class": "MakeInterval",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::NextDay.arg_types",
+      "name": "arg_types",
+      "class": "NextDay",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::PreviousDay.arg_types",
+      "name": "arg_types",
+      "class": "PreviousDay",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Time.arg_types",
+      "name": "arg_types",
+      "class": "Time",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeFromParts._sql_names",
+      "name": "_sql_names",
+      "class": "TimeFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeFromParts.arg_types",
+      "name": "arg_types",
+      "class": "TimeFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::Timestamp.arg_types",
+      "name": "arg_types",
+      "class": "Timestamp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampFromParts._sql_names",
+      "name": "_sql_names",
+      "class": "TimestampFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampFromParts.arg_types",
+      "name": "arg_types",
+      "class": "TimestampFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampLtzFromParts._sql_names",
+      "name": "_sql_names",
+      "class": "TimestampLtzFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampLtzFromParts.arg_types",
+      "name": "arg_types",
+      "class": "TimestampLtzFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampTzFromParts._sql_names",
+      "name": "_sql_names",
+      "class": "TimestampTzFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimestampTzFromParts.arg_types",
+      "name": "arg_types",
+      "class": "TimestampTzFromParts",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::ConvertTimezone.arg_types",
+      "name": "arg_types",
+      "class": "ConvertTimezone",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::FromISO8601Timestamp._sql_names",
+      "name": "_sql_names",
+      "class": "FromISO8601Timestamp",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::FromISO8601Date._sql_names",
+      "name": "_sql_names",
+      "class": "FromISO8601Date",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::FromISO8601TimestampNanos._sql_names",
+      "name": "_sql_names",
+      "class": "FromISO8601TimestampNanos",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::ParseDatetime.arg_types",
+      "name": "arg_types",
+      "class": "ParseDatetime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::ParseTime.arg_types",
+      "name": "arg_types",
+      "class": "ParseTime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::StrToDate.arg_types",
+      "name": "arg_types",
+      "class": "StrToDate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::StrToTime.arg_types",
+      "name": "arg_types",
+      "class": "StrToTime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::StrToUnix.arg_types",
+      "name": "arg_types",
+      "class": "StrToUnix",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeStrToTime.arg_types",
+      "name": "arg_types",
+      "class": "TimeStrToTime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TimeToStr.arg_types",
+      "name": "arg_types",
+      "class": "TimeToStr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TsOrDsToDate.arg_types",
+      "name": "arg_types",
+      "class": "TsOrDsToDate",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::TsOrDsToTime.arg_types",
+      "name": "arg_types",
+      "class": "TsOrDsToTime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToStr.arg_types",
+      "name": "arg_types",
+      "class": "UnixToStr",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.arg_types",
+      "name": "arg_types",
+      "class": "UnixToTime",
+      "status": "metadata"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.SECONDS",
+      "name": "SECONDS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.DECIS",
+      "name": "DECIS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.CENTIS",
+      "name": "CENTIS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.MILLIS",
+      "name": "MILLIS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.DECIMILLIS",
+      "name": "DECIMILLIS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.CENTIMILLIS",
+      "name": "CENTIMILLIS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.MICROS",
+      "name": "MICROS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.DECIMICROS",
+      "name": "DECIMICROS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.CENTIMICROS",
+      "name": "CENTIMICROS",
+      "class": "UnixToTime",
+      "status": "generated"
+    },
+    {
+      "anchor": "sqlglot/expressions/temporal.py::UnixToTime.NANOS",
+      "name": "NANOS",
+      "class": "UnixToTime",
+      "status": "generated"
+    }
+  ]
+}

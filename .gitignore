@@ -1,0 +1,16 @@
+# Official SQLGlot clone, read-only oracle (v30.27.0, see UPSTREAM.json); fetch it again instead of versioning it
+python/
+
+# Local build output, oracle venv, logs and scratch (never versioned)
+artifacts/
+
+# .NET build output and IDE state (outside artifacts/)
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Python bytecode
+__pycache__/
+*.pyc

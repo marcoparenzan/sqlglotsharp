@@ -1,0 +1,1140 @@
+[
+  {
+    "kind": "binary",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "x"
+        }
+      ],
+      [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "1"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": false
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Add"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "x"
+        },
+        {
+          "i": 0,
+          "k": "expression",
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "1"
+        },
+        {
+          "i": 3,
+          "k": "is_string",
+          "v": false
+        }
+      ]
+    }
+  },
+  {
+    "kind": "binary",
+    "args": [],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Add"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "timestamp_trunc",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "month"
+        }
+      ],
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "ts"
+        }
+      ],
+      [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "UTC"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.temporal.TimestampTrunc"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "ts"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "MONTH"
+        },
+        {
+          "i": 0,
+          "k": "zone",
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 5,
+          "k": "this",
+          "v": "UTC"
+        },
+        {
+          "i": 5,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "isnull",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.EQ"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "x"
+        },
+        {
+          "i": 0,
+          "k": "expression",
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "1"
+        },
+        {
+          "i": 3,
+          "k": "is_string",
+          "v": false
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Paren"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Is"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Paren"
+        },
+        {
+          "i": 2,
+          "k": "this",
+          "c": "sqlglot.expressions.core.EQ"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 4,
+          "k": "this",
+          "v": "x"
+        },
+        {
+          "i": 3,
+          "k": "expression",
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 6,
+          "k": "this",
+          "v": "1"
+        },
+        {
+          "i": 6,
+          "k": "is_string",
+          "v": false
+        },
+        {
+          "i": 1,
+          "k": "expression",
+          "c": "sqlglot.expressions.core.Null"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "isnull",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "x"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Paren"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Is"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 2,
+          "k": "this",
+          "v": "x"
+        },
+        {
+          "i": 1,
+          "k": "expression",
+          "c": "sqlglot.expressions.core.Null"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "date_delta",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "x"
+        }
+      ],
+      [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "3"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": false
+        }
+      ]
+    ],
+    "settings": {
+      "cls": "DateAdd"
+    },
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.temporal.DateAdd"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "x"
+        },
+        {
+          "i": 0,
+          "k": "expression",
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "3"
+        },
+        {
+          "i": 3,
+          "k": "is_string",
+          "v": false
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 6,
+          "k": "this",
+          "v": "DAY"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "date_delta",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "d"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": true
+        }
+      ],
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "a"
+        }
+      ],
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "b"
+        }
+      ]
+    ],
+    "settings": {
+      "cls": "DateDiff",
+      "mapping": {
+        "d": "day"
+      }
+    },
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.temporal.DateDiff"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "b"
+        },
+        {
+          "i": 0,
+          "k": "expression",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "a"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 5,
+          "k": "this",
+          "v": "DAY"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "formatted_time",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "x"
+        }
+      ],
+      [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "YYYY-MM-DD"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    ],
+    "settings": {
+      "cls": "StrToTime",
+      "dialect": "postgres"
+    },
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.temporal.StrToTime"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "x"
+        },
+        {
+          "i": 0,
+          "k": "format",
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "%Y-%m-%d"
+        },
+        {
+          "i": 3,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "formatted_time",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "x"
+        }
+      ]
+    ],
+    "settings": {
+      "cls": "StrToTime",
+      "dialect": "postgres",
+      "default": true
+    },
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.temporal.StrToTime"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "x"
+        },
+        {
+          "i": 0,
+          "k": "format",
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "%Y-%m-%d %H:%M:%S"
+        },
+        {
+          "i": 3,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "unit_to_str",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "DAY"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "unit_to_str",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "MONTH"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "MONTH"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "unit_to_str",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "MONTH"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "MONTH"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "unit_to_str",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Placeholder"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "unit"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Placeholder"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "unit"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "unit_to_str",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "v": "raw"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "value": "raw"
+    }
+  },
+  {
+    "kind": "unit_to_var",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "DAY"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "unit_to_var",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "MONTH"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "MONTH"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "unit_to_var",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "MONTH"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "MONTH"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "unit_to_var",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.datatypes.Interval"
+        },
+        {
+          "i": 0,
+          "k": "unit",
+          "c": "sqlglot.expressions.core.Placeholder"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "unit"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Placeholder"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "unit"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "week_unit",
+    "args": [
+      null
+    ],
+    "settings": {},
+    "expected": {
+      "value": null
+    }
+  },
+  {
+    "kind": "week_unit",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "week"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "value": 1
+    }
+  },
+  {
+    "kind": "week_unit",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "ISOWEEK"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "value": 1
+    }
+  },
+  {
+    "kind": "week_unit",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.functions.WeekStart"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "SUNDAY"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "value": 7
+    }
+  },
+  {
+    "kind": "week_unit",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "day"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "value": null
+    }
+  },
+  {
+    "kind": "week_offset",
+    "args": [
+      -15
+    ],
+    "settings": {},
+    "expected": {
+      "value": 7
+    }
+  },
+  {
+    "kind": "week_offset",
+    "args": [
+      -8
+    ],
+    "settings": {},
+    "expected": {
+      "value": 7
+    }
+  },
+  {
+    "kind": "week_offset",
+    "args": [
+      -1
+    ],
+    "settings": {},
+    "expected": {
+      "value": 7
+    }
+  },
+  {
+    "kind": "week_offset",
+    "args": [
+      0
+    ],
+    "settings": {},
+    "expected": {
+      "value": 1
+    }
+  },
+  {
+    "kind": "week_offset",
+    "args": [
+      1
+    ],
+    "settings": {},
+    "expected": {
+      "value": 2
+    }
+  },
+  {
+    "kind": "week_offset",
+    "args": [
+      6
+    ],
+    "settings": {},
+    "expected": {
+      "value": 7
+    }
+  },
+  {
+    "kind": "week_offset",
+    "args": [
+      7
+    ],
+    "settings": {},
+    "expected": {
+      "value": 1
+    }
+  },
+  {
+    "kind": "week_offset",
+    "args": [
+      15
+    ],
+    "settings": {},
+    "expected": {
+      "value": 2
+    }
+  },
+  {
+    "kind": "map_date_part",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "D"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Var"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "DAY"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "map_date_part",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "D"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Literal"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "v": "DAY"
+        },
+        {
+          "i": 0,
+          "k": "is_string",
+          "v": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "map_date_part",
+    "args": [
+      [
+        {
+          "c": "sqlglot.expressions.core.Column"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Identifier"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "D"
+        },
+        {
+          "i": 0,
+          "k": "table",
+          "c": "sqlglot.expressions.core.Identifier"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "t"
+        }
+      ]
+    ],
+    "settings": {},
+    "expected": {
+      "ast": [
+        {
+          "c": "sqlglot.expressions.core.Column"
+        },
+        {
+          "i": 0,
+          "k": "this",
+          "c": "sqlglot.expressions.core.Identifier"
+        },
+        {
+          "i": 1,
+          "k": "this",
+          "v": "D"
+        },
+        {
+          "i": 0,
+          "k": "table",
+          "c": "sqlglot.expressions.core.Identifier"
+        },
+        {
+          "i": 3,
+          "k": "this",
+          "v": "t"
+        }
+      ]
+    }
+  }
+]

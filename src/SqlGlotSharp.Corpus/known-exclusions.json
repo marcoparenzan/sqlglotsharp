@@ -1,0 +1,74 @@
+[
+  {
+    "id": "4d10c57af166493a72c79ba9b8a98c4376d21b98247be89cb4fc7d16b7f980c6",
+    "level": "L1",
+    "dialect": "base",
+    "reason": "recorder v4 did not capture parser logger output (test uses assertLogs, error_level=WARN); C# emits the same errors Python logs"
+  },
+  {
+    "id": "63b333d1667557c1139ef47a2dfdf95590da8e6e8f27466196e0e49dbd559672",
+    "level": "L1",
+    "dialect": "base",
+    "reason": "recorder v4 did not capture parser logger output (test uses assertLogs, error_level=WARN)"
+  },
+  {
+    "id": "b7d7e3fe7f5dc03bb8a996db1987c86b897bbd0f7c4084683ded3a72a03a8c46",
+    "level": "L1",
+    "dialect": "base",
+    "reason": "recorder v4 did not capture parser logger output (test uses assertLogs, error_level=WARN)"
+  },
+  {
+    "id": "f8c53c0e141de55ec715acd99ad318637c0e6c91c02d21e0ec54194ba09c3587",
+    "level": "L1",
+    "dialect": "base",
+    "reason": "recorder v4 did not capture parser logger output (test uses assertLogs, error_level=WARN)"
+  },
+  {
+    "id": "b61bc651496722a775eaf997d056691a761c0e4b1fb0e03db3fd91769f6bf281",
+    "level": "L2",
+    "dialect": "base",
+    "reason": "recorder v4 has no runtime_context: test sets the global sqlglot.pretty=True, not recorded"
+  },
+  {
+    "id": "75c6731aa39081f2fa413e622b30a4d5424cf85766d603e7e79ec3012fab5396",
+    "level": "L2",
+    "dialect": "postgres",
+    "reason": "recorded AST loses the empty ColumnDef.constraints list; Python serde.load + generate also raises KeyError"
+  },
+  {
+    "id": "f5825d8737933bcea630ef12c724163476c5f8309b2cdc9f46755f7aa4e1c0c5",
+    "level": "L2",
+    "dialect": "base",
+    "reason": "recorder AST dump drops empty list args: Python parses 'CREDENTIALS = ()' to Credentials(credentials=[]) and prints 'CREDENTIALS = ()', but the dumped AST has no credentials arg, so replay cannot rebuild it (verified against Python 3.11 oracle)"
+  },
+  {
+    "id": "ad3d12c3c7bb7b69867140e8eccd30b3197c4c06ac33523c15669194404d3868",
+    "level": "L3",
+    "dialect": "base",
+    "reason": "recorder v4 did not capture parser logger output (test_error_level mocks the logger, error_level=WARN); C# emits the same two messages the test asserts"
+  },
+  {
+    "id": "00b62d8f80ed4ea74f9378735ef2140120af36f8c786fca46e1c4c01f6039abd",
+    "level": "L2",
+    "dialect": "postgres",
+    "reason": "recorder write dialect lost its settings: the source case writes 'postgres, version=15' (expected MAX(1)), but the record only stores 'postgres' (default version prints ANY_VALUE, verified against Python 3.11)"
+  },
+  {
+    "id": "0f14397a51dbb728890b831d97667a2eac13b3f0a4bd3d53544a999b380469e5",
+    "level": "L3",
+    "dialect": "postgres",
+    "reason": "recorder write dialect lost its settings: the source case writes 'postgres, version=15' (expected MAX(1)), but the record only stores 'postgres' (default version prints ANY_VALUE, verified against Python 3.11)"
+  },
+  {
+    "id": "be46cb78f05577a75432590f97578a3678e026cb664286d619b654b877015944",
+    "level": "L2",
+    "dialect": "base",
+    "reason": "test-local class: the AST was recorded from a Func subclass defined inside the Python test (SpecialUdf, a <locals> class); it has no importable definition, so neither the recorder replay nor C# can rebuild it"
+  },
+  {
+    "id": "cf468cc62c57e1c855b2416b5b8b247f33904d0ee43b116ca7c55a048dcc32e7",
+    "level": "L2",
+    "dialect": "base",
+    "reason": "test-local class: the AST was recorded from a Func subclass defined inside the Python test (SpecialUdf, a <locals> class); it has no importable definition, so neither the recorder replay nor C# can rebuild it"
+  }
+]

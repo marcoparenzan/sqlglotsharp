@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="Benchmarks/Benchmarks.csproj" />
+  <Project Path="PortingTools/PortingTools.csproj" />
+  <Project Path="Scoreboard/Scoreboard.csproj" />
+  <Project Path="SqlGlotSharp.Corpus/SqlGlotSharp.Corpus.csproj" />
+  <Project Path="SqlGlotSharp.Demo/SqlGlotSharp.Demo.csproj" />
+  <Project Path="SqlGlotSharp.Extensions.Layer3/SqlGlotSharp.Extensions.Layer3.csproj" />
+  <Project Path="SqlGlotSharp.Extensions.Layer3.Tests/SqlGlotSharp.Extensions.Layer3.Tests.csproj" />
+  <Project Path="SqlGlotSharp.Tests/SqlGlotSharp.Tests.csproj" />
+  <Project Path="SqlGlotSharp/SqlGlotSharp.csproj" />
+</Solution>
