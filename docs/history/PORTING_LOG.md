@@ -151,3 +151,4 @@
 - Tests: build 0 errors; unit tests 946/946 (938 + 8); full Scoreboard 26,487/26,487, 0 fail, 0 NotPorted. Not run: `SqlGlotSharp.CorpusTests`.
 - First Git commit (local). Not pushed.
 - Layer 3 package README (`src/SqlGlotSharp.Extensions.Layer3/README.md`), packed as `SqlGlotSharp.Extensions.Layer3` `30.27.0-net10-preview.2` (preview.1 stays in the feed, without README). README example checked from the package: `JSON_ARRAY_CONTAINS('a', t.tags) AND b = 1`.
+- Pushed `main` to https://github.com/marcoparenzan/sqlglotsharp (public), authorized by Marco.
