@@ -4,20 +4,22 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>SqlGlotSharp.Extensions.Layer3</RootNamespace>
-    <!-- Same version as SqlGlotSharp (AGENTS.md rule 8) -->
-    <Version>30.27.0-net10-preview.1</Version>
+    <!-- <upstream SQLGlot x.y.z>-net10-preview.<n> (AGENTS.md rule 8); preview.2 adds the package README -->
+    <Version>30.27.0-net10-preview.2</Version>
     <IsPackable>true</IsPackable>
     <PackageId>SqlGlotSharp.Extensions.Layer3</PackageId>
     <Authors>Marco Parenzan</Authors>
     <Description>Layer 3 host dialect for SqlGlotSharp (base dialect plus MEMBER OF). Register with Layer3.Register().</Description>
     <Copyright>Copyright (c) 2026 Marco Parenzan</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>sql;parser;transpiler;sqlglot</PackageTags>
     <RepositoryUrl>https://github.com/marcoparenzan/sqlglotsharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageOutputPath>D:\Dev\NuGetLocalFeed</PackageOutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="/" />
     <ProjectReference Include="../SqlGlotSharp/SqlGlotSharp.csproj" />
   </ItemGroup>
 </Project>

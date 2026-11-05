@@ -18,7 +18,7 @@ Nothing is published on nuget.org. Either pack it into a local feed or reference
 
 ```powershell
 dotnet add MyApp package SqlGlotSharp --version 30.27.0-net10-preview.1
-dotnet add MyApp package SqlGlotSharp.Extensions.Layer3 --version 30.27.0-net10-preview.1   # optional
+dotnet add MyApp package SqlGlotSharp.Extensions.Layer3 --version 30.27.0-net10-preview.2   # optional
 ```
 
 A change in content needs a new version (`-net10-preview.<n+1>`), otherwise the NuGet cache keeps the old copy.

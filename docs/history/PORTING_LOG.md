@@ -150,3 +150,4 @@
 - NuGet: package metadata on `SqlGlotSharp` and `SqlGlotSharp.Extensions.Layer3`; both packed as `30.27.0-net10-preview.1` into `D:\Dev\NuGetLocalFeed`. Checked from a console outside the repository (package restore, transpile postgres↔tsql, Layer 3 registration).
 - Tests: build 0 errors; unit tests 946/946 (938 + 8); full Scoreboard 26,487/26,487, 0 fail, 0 NotPorted. Not run: `SqlGlotSharp.CorpusTests`.
 - First Git commit (local). Not pushed.
+- Layer 3 package README (`src/SqlGlotSharp.Extensions.Layer3/README.md`), packed as `SqlGlotSharp.Extensions.Layer3` `30.27.0-net10-preview.2` (preview.1 stays in the feed, without README). README example checked from the package: `JSON_ARRAY_CONTAINS('a', t.tags) AND b = 1`.
